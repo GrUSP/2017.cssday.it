@@ -1,0 +1,102 @@
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script>
+function initialize_map() {
+        var mapOptions = {
+          zoom: 15,
+          center: new google.maps.LatLng(45.49778, 9.22135),
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(document.getElementById('map_canvas'),
+                                      mapOptions);
+
+        var I3P = new google.maps.Marker({
+            position: new google.maps.LatLng(45.49778, 9.22135),
+            map: map,
+            icon: 'img/marker_i3p.png',
+			title:"Talent Garden Milano"
+        });
+		var hotel_sanpaolo = new google.maps.Marker({
+            position: new google.maps.LatLng(45.0598373, 7.6529137),
+            map: map,
+            icon: 'img/marker_hotel.png',
+			title:"Hotel Residence San Paolo"
+        });
+		var stazione_portasusa = new google.maps.Marker({
+            position: new google.maps.LatLng(45.49580, 9.21976),
+            map: map,
+            icon: 'img/marker_trasporti.png',
+			title:"Stazione Metro Rovereto"
+        });
+
+		var stazione_turro = new google.maps.Marker({
+            position: new google.maps.LatLng(45.50093, 9.22118),
+            map: map,
+            icon: 'img/marker_trasporti.png',
+			title:"Stazione Metro Turro"
+        });
+
+
+
+      }
+</script>
+
+<a name="location"></a>
+<section class="alpha_32">
+	<div class="container group">
+		<h3 class="column_12">Location</h3>
+		<div class="column_6 map">
+			<div id="map_canvas"></div>
+		</div>
+
+		<div class="column_6 legend right">
+			<dl>
+			  <dt class="event_location"><span><strong>Event location</strong></span></dt>
+			    <dd  class="event_location">
+			    	<a href="http://milano.talentgarden.it/informazioni/">Talent Garden</a><br/>
+				via Merano 18, <br/>
+				Milano, Italy
+				</dd>
+			  <dt class="eat"><span><strong>Dove mangiare</strong></span></dt>
+			    <dd>Ristoranti</dd>
+			  <dt class="get_to"><span><strong>Come arrivare</strong></span></dt>
+			    <dd>Trasporti</dd>
+			  <dt class="stay"><span><strong>Dove dormire</strong></span></dt>
+			    <dd>Alberghi</dd>
+			</dl>
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="column_3">
+			<h5>In auto</h5>
+			<p>Dall'autostrada, seguire le indicazioni per il centro.</p>
+
+		</div>
+
+		<div class="column_3">
+			<h5>In treno</h5>
+			<p>
+				<strong>Dalla stazione Centrale (Frecciarossa)</strong>: prendere la  metro in direzione Duomo, cambiare e prendere la metro Rossa in direzione Turro o Rovereto. Scendere ad una di queste due fermate e proseguire a piedi per via Merano 18.
+			</p>
+		</div>
+
+		<div class="column_3">
+			<h5>In aereo</h5>
+			<p>
+				<strong>Da Linate</strong>: prendi la linea 73 fino a San Babila e poi prendi la M1 fino a Turro.
+			</p>
+		</div>
+
+		<div class="column_3">
+			<h5>Pernottamento</h5>
+			<p>
+<a href="http://www.booking.com/searchresults.it.html?label=gog235jc-district-it-it-milan_vialemonza-unspec-it-com;sid=27e9aa428736e19252d95a2043406490;dcid=1;checkin_monthday=1;checkin_year_month=2013-2;checkout_monthday=2;checkout_year_month=2013-2;class_interval=1;csflt=%7B%7D;inac=0;offset=0;redirected_from_city=0;redirected_from_landmark=0;review_score_group=empty;score_min=0;si=ai%2Cco%2Cci%2Cre%2Cdi;src=searchresults;ss_all=0;;district=2062;city=-121726;origin=disamb;srhash=4267253188;srpos=1" target="_blank">Alberghi in zona</a>
+			</p>
+		</div>
+	</div>
+
+
+	<div class="clear"></div>
+</div>
+<div class="separator"></div>
+</section>

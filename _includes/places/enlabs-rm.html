@@ -1,0 +1,90 @@
+
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script>
+    function initialize_map() {
+        var mapOptions = {
+            zoom: 15,
+            center: new google.maps.LatLng(41.89861, 12.50365),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(document.getElementById('map_canvas'),
+                mapOptions);
+
+        var Enlabs = new google.maps.Marker({
+            position: new google.maps.LatLng(41.89861, 12.50365),
+            map: map,
+            icon: 'img/marker_enlabs.png',
+            title:"Luiss-Enlabs"
+        });
+    }
+</script>
+
+<a name="location"></a>
+<section class="alpha_32">
+	<div class="container group">
+
+            <h3 class="column_12">Location</h3>
+            <div class="column_6 map">
+                <div id="map_canvas"></div>
+            </div>
+
+            <div class="column_6 legend right">
+                <dl>
+                    <dt class="event_location"><span><strong>Event location</strong></span></dt>
+                    <dd  class="event_location">
+                        <strong>c/o <a href="http://www.enlabs.it">Luiss-Enlabs</a></strong>
+                        Via Giovanni Giolitti 34<br />
+                        00185 Rome , Italy
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="column_3">
+                <h5>In auto</h5>
+                <p>
+                    <strong>da Napoli (sud):</strong><br />
+                    Dall'A1 immettersi nel Grande Raccordo Anulare, uscita "Appia" n. 23. Arrivati a San Giovanni seguire le indicazioni per la Stazione Termini.
+                </p>
+                <p>
+                    <strong>Da Firenze (nord):</strong><br />
+                    Dall'A1 immettersi nel Grande Raccordo Anulare, uscita "Salaria" n. 8. Seguire le indicazioni per il centro città -> Via Veneto -> Stazione Termini.
+                </p>
+                <p>
+                    <strong>Da L'Aquila (est):</strong><br />
+                    Dall'A24/A25 immettersi sulla Tangenziale Est, seguire le indicazioni per San Giovanni -> Stazione Termini.
+                </p>
+            </div>
+
+            <div class="column_3">
+                <h5>In treno</h5>
+                <p>
+                    Con ogni probabilità il vostro treno effettuerà una fermata direttamente nella Stazione Termini. In caso di fermata in altra stazione vedere le indicazioni nella sezione "mezzi pubblici".
+                </p>
+            </div>
+
+            <div class="column_3">
+                <h5>In aereo</h5>
+                <p>
+                    <strong>Da Fiumicino:</strong> il treno Leonardo Express fino alla Stazione Termini.<br />
+                    <strong>Da Ciampino:</strong> servizio Bus Navetta fino alla Stazione Termini.
+                </p>
+            </div>
+
+            <div class="column_3">
+                <h5>Mezzi pubblici</h5>
+                <p>
+                    <strong>Linee metropolitana:</strong> A (linea rossa), B (linea blu)<br />
+                    <strong>Linee tranviarie:</strong> 5, 14<br />
+                    <strong>Linee bus:</strong> C2 – C3 – H – M – 16 – 38 – 40 – 64 – 75 – 82 – 85 – 90 – 92 – 105 – 170 – 175 – 217 – 310 – 360 – 649 – 714 - 910<br />
+                    Per maggiori informazioni consultare il sito dell'<a href="http://www.atac.roma.it/">atac</a>.
+                </p>
+            </div>
+
+	</div>
+
+	<div class="clear"></div>
+
+    <div class="separator"></div>
+</section>

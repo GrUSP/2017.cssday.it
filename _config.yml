@@ -1,0 +1,8 @@
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:title
+rdiscount:
+  extensions: [smart]
+conf_data: "Faenza, 17/03/2017"
+media_tags: "faenza"
+conf_year: 2017

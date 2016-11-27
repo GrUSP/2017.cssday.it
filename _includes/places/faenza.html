@@ -1,0 +1,83 @@
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script>
+function initialize_map() {
+        var mapOptions = {
+          zoom: 15,
+          center: new google.maps.LatLng(44.2832168, 11.8849821),
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(document.getElementById('map_canvas'),
+                                      mapOptions);
+
+        var I3P = new google.maps.Marker({
+            position: new google.maps.LatLng(44.2832168, 11.8849821),
+            map: map,
+            icon: 'img/marker_i3p.png',
+			title:"Fondazione Salesiani"
+        });
+
+
+
+      }
+</script>
+
+<a name="location"></a>
+<section class="alpha_32">
+	<div class="container group">
+		<h3 class="column_12">Location</h3>
+		<div class="column_6 map">
+			<div id="map_canvas"></div>
+		</div>
+
+		<div class="column_6 legend right">
+			<dl>
+			  <dt class="event_location"><span><strong>Event location</strong></span></dt>
+			    <dd  class="event_location">
+			    	<a href="https://www.google.com/maps/place/Via+san+Giovanni+Bosco,+1/@44.2832168,11.8849821,16z">Palazzo Naldi / Fondazione Salesiani (Ground Floor)</a><br/>
+					Via San Giovanni Bosco n. 1<br/>
+					Faenza (RA)
+				</dd>
+			  <dt class="eat"><span><strong>Dove mangiare</strong></span></dt>
+			    <dd>Ristoranti</dd>
+			  <dt class="get_to"><span><strong>Come arrivare</strong></span></dt>
+			    <dd>Trasporti</dd>
+			  <dt class="stay"><span><strong>Dove dormire</strong></span></dt>
+			    <dd>Alberghi</dd>
+			</dl>
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="column_3">
+			<h5>In auto</h5>
+			<p>Dall'autostrada, seguire le indicazioni per il centro. Parcheggiare presso il parcheggio dei Salesiani/Palazzo Naldi, l'ingresso e sulla via Mura Diamante Torelli. Sul <a href="http://www.movs.it/it/1316-mappa.htm">sito MOVS</a> è presente la lista di tutti i parcheggi di Faenza</p>
+
+		</div>
+
+		<div class="column_3">
+			<h5>In treno</h5>
+			<p>
+				<strong>Dalla stazione Centrale (Regionali da Bologna/Firenze/Ravenna, Intercity da Milano/Ancona)</strong>: prendere corso Baccarini in direzione del centro.
+			</p>
+		</div>
+
+		<div class="column_3">
+			<h5>In aereo</h5>
+			<p>
+				<strong>Da BLQ</strong>: prendere autostrada A14 direzione Ancona ed uscire a Faenza.
+			</p>
+		</div>
+
+		<div class="column_3">
+			<h5>Pernottamento</h5>
+			<p>
+			<a href="http://www.booking.com/city/it/faenza.it.html" target="_blank">Alberghi in zona</a>
+			</p>
+		</div>
+	</div>
+
+
+	<div class="clear"></div>
+</div>
+<div class="separator"></div>
+</section>
