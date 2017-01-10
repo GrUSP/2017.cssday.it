@@ -1,0 +1,82 @@
+---
+config:
+  autoprefixer:
+    browsers:
+      - "last 3 versions"
+  csslint: csslintrc.json
+  faker:
+    locale: it
+  prettify:
+    indent_char: " "
+    indent_size: 2
+  stylestats: .stylestatsrc
+  twig:
+    cache: false
+  osNotifications: true
+  emptyFolders: true
+  polling: true
+  verbose: 3
+  verify: true
+
+css:
+  file: frontsize.min.css
+  themes:
+    -
+      autoprefixer: true
+      compile: _frontend/frontsize/phpday-2017/import.scss
+      csslint: false
+      file: phpday.css
+      images: _frontend/frontsize/phpday-2017/img/**/*.*
+      merge: true
+      name: phpday
+      path: node_modules/dustman/temp
+      stylestats: false
+    -
+      autoprefixer: false
+      compile: _frontend/frontsize/grusp/import.scss
+      csslint: false
+      file: grusp.css
+      fonts: _frontend/frontsize/grusp/fontello/font/**/*.*
+      merge: true
+      name: grusp
+      path: node_modules/dustman/temp
+      stylestats: false
+  vendors:
+    file: vendors.min.css
+    merge: true
+    path: node_modules/dustman/temp/
+    files:
+      - _frontend/frontsize/grusp/fontello/css/grusp-codes.css
+  watch: _frontend/frontsize/**/*.scss
+#
+# js:
+#   file: dustman.min.js
+#   clean: true
+#   files:
+#     - test/examples/js/*
+#   path: test/results/js/custom/
+#   vendors:
+#     file: vendors.min.js
+#     files:
+#       - test/examples/vendor/angular/angular.js
+#       - test/examples/vendor/angular-animate/angular-animate.js
+#       - test/examples/vendor/angular-bootstrap/ui-bootstrap-tpls.js
+#       - test/examples/vendor/angular-bootstrap/ui-bootstrap.js
+#       - test/examples/vendor/Chart.js/Chart.js
+#       - test/examples/vendor/angular-chart.js/dist/angular-chart.js
+#       - test/examples/vendor/angular-cookies/angular-cookies.js
+#       - test/examples/vendor/angular-dynamic-locale/dist/tmhDynamicLocale.js
+#       - test/examples/vendor/angular-flash/angular-flash.js
+#       - test/examples/vendor/angular-route/angular-route.js
+#     merge: true
+#     path: test/results/js/custom/
+#   watch: test/examples/js/**/*.js
+
+paths:
+  css: css/
+  fonts: fonts/
+  images: img/themes/
+  # js: test/results/js/
+
+tasks:
+  - css

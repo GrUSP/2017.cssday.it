@@ -1,0 +1,23 @@
+{
+  "name": "cssday",
+  "version": "0.0.1",
+  "description": "oneday-conf-template ====================",
+  "main": "index.js",
+  "devDependencies": {
+    "dustman": "^1.11.55",
+    "frontsize": "git+https://github.com/ideatosrl/frontsize.git#f987f7b"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrUSP/2017.cssday.it.git"
+  },
+  "author": "Vittorio <me@vittoriovittori.com> (http://vit.to/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GrUSP/2017.cssday.it/issues"
+  },
+  "homepage": "https://github.com/GrUSP/2017.cssday.it#readme"
+}

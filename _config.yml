@@ -3,6 +3,35 @@ highlighter: rouge
 permalink: /blog/:title
 rdiscount:
   extensions: [smart]
-conf_data: "Faenza, 17/03/2017"
-media_tags: "faenza"
-conf_year: 2017
+defaults:
+  -
+    values:
+      layout: cssday
+exclude:
+  - .gitignore
+  - dustman.yml
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - LICENSE
+  - node_modules
+  - npm-debug.log
+  - package.json
+  - README.md
+
+info:
+  cfp_url: https://goo.gl/forms/NpVU3q7xmcSaspsJ2
+  cfp: true
+  cfs: true
+  conf_anno: 2017
+  conf_data: "Faenza (RA),  17 marzo 2017"
+  conf_year: 2017
+  media_tags: "faenza"
+  og_image:
+  og_title:
+  og_url: http://2016.cssday.it
+  speakers: false
+  tickets_url: //eventbrite.com/tickets-external?eid=28891550405
+  tickets: true
+  ttl: CSS Day
+  where: faenza-sarti
