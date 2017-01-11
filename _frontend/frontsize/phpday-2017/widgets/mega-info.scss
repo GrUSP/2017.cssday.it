@@ -1,0 +1,36 @@
+@include block ('mega-info') {
+  color: $color-text-info;
+  font-size: 300px;
+  font-weight: 700;
+  line-height: 0.75;
+  margin-top: s(2);
+  position: relative;
+  text-transform: uppercase;
+  vertical-align: baseline;
+  white-space: nowrap;
+
+  & + & {
+    margin-top: s(4);
+
+    @include media ('<mobile-large') {
+      margin-top: s(2);
+    }
+  }
+
+  @include media ('<=tablet-small') {
+    font-size: 200px;
+  }
+
+  @include media ('<mobile-large') {
+    font-size: 174px;
+  }
+
+  @include element ('number') {
+    float: left;
+  }
+
+  @include element ('text') {
+    display: inline;
+    font-size: 28%;
+  }
+}

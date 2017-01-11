@@ -1,18 +1,11 @@
 @include block ('header') {
   background-color: $color-background;
+  box-shadow: $box-shadow-outline;
   left: 0;
-  padding: s(5);
   position: fixed;
   right: 0;
   top: 0;
-
-  @include media ('<tablet-small') {
-    padding: s(2);
-  }
-
-  @include media ('<desktop-small') {
-    padding: s(3);
-  }
+  z-index: 2;
 
   @include element ('row') {
     display: table;
@@ -31,8 +24,30 @@
 
   @include element ('conf-name') {
     display: table-cell;
-    font-family: $font-header;
+    font-family: $font-family-header;
     font-size: 18px;
     vertical-align: middle;
+    white-space: nowrap;
+  }
+
+  @include element ('menu') {
+    display: table-cell;
+    text-align: right;
+    width: 100%;
+  }
+
+  @include element ('menu-desktop') {
+    float: right;
+    @include media ('<=tablet-small') {
+      display: none;
+    }
+  }
+
+  @include element ('menu-mobile') {
+    display: block;
+    float: right;
+    @include media ('>tablet-small') {
+      display: none;
+    }
   }
 }

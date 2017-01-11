@@ -1,4 +1,5 @@
 .limit {
+  padding: s(2) s(4);
   @include limit((
       '>=desktop-large': 1600px,
       '>=desktop-small': 1280px,

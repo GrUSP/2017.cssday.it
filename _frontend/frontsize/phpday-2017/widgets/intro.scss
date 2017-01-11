@@ -4,7 +4,7 @@
   background-size: cover;
   height: 700px;
   height: 100vh;
-  padding: s(4);
+  position: relative;
 
   @include media ('<mobile-large') {
     height: 250px;
@@ -29,7 +29,7 @@
   }
 
   @include element ('title') {
-    font-family: $font-header;
+    font-family: $font-family-header;
     font-size: 38px;
     margin-top: s(4);
 
@@ -55,7 +55,7 @@
   }
 
   @include element ('where-when') {
-    font-family: $font-title;
+    font-family: $font-family-title;
     font-size: 40px;
     font-style: italic;
     font-weight: bold;
@@ -63,5 +63,48 @@
     @include media ('<tablet-small') {
       font-size: 20px;
     }
+  }
+
+  @include element ('register') {
+    background-color: $color-background-action;
+    bottom: s(-13);
+    color: $color-text-action;
+    display: block;
+    font-family: $font-family-header;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: s(9);
+    padding: s(2) s(4);
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.25s ease-out;
+    width: 50%;
+
+    &:hover {
+      background-color: lighten($color-background-action, 5%);
+
+      @include element ('icon') {
+        left: 0;
+      }
+    }
+
+    @include media ('<desktop-small') {
+      text-align: center;
+      width: 100%;
+
+      @include element ('icon') {
+        display: none;
+      }
+    }
+  }
+
+  @include element ('icon') {
+    float: left;
+    font-size: 40px;
+    left: -5px;
+    position: relative;
+    transition: left 0.125s ease-out;
   }
 }

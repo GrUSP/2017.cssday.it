@@ -1,0 +1,47 @@
+@include block ('button') {
+  color: $color-background-action;
+  display: inline-block;
+  font-family: $font-family-header;
+  font-weight: 700;
+  padding: s(1) s(2);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.075s ease-out, color 0.075s ease-out;
+
+  &:hover {
+    color: $color-text;
+  }
+
+  @include modifier ('register') {
+    background-color: $color-background-action;
+    color: $color-text-action;
+
+    &:hover {
+      background-color: lighten($color-background-action, 5%);
+      color: $color-text-action;
+    }
+  }
+
+  @include modifier ('menu') {
+    background-color: $color-background-dark;
+    float: right;
+    height: 38px;
+    margin-left: s(2);
+    position: relative;
+    width: 38px;
+
+    .icon-minus {
+      color: $color-text-action;
+      left: 9px;
+      position: absolute;
+
+      &:first-child {
+        top: 3px;
+      }
+
+      &:last-child {
+        bottom: 3px;
+      }
+    }
+  }
+}

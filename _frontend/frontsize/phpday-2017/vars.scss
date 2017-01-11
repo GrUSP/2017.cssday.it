@@ -1,16 +1,22 @@
 
+$font-family-monospace: menlo, monaco, 'courier new', monospace;
 $font-family-sans: 'proxima-nova', helvetica, arial, sans-serif;
 $font-family-serif: georgia, 'times new roman', times, serif;
-$font-family-monospace: menlo, monaco, 'courier new', monospace;
 
-$color-white: rgb(255, 255, 255);
-$color-jordy-blue: rgb(139, 171, 234);
 $color-carnation: rgb(244, 86, 86);
+$color-jordy-blue: rgb(139, 171, 234);
 $color-mine-shaft: rgb(45, 45, 45);
+$color-white: rgb(255, 255, 255);
 
+$color-background-action: $color-carnation;
+$color-background-dark: $color-mine-shaft;
 $color-background: $color-white;
+$color-text-action: $color-white;
+$color-text-info: $color-jordy-blue;
 $color-text: $color-mine-shaft;
 
-$font-header: $font-family-sans;
-$font-title: $font-family-serif;
-$font-text: $font-family-sans;
+$font-family-header: $font-family-sans;
+$font-family-text: $font-family-sans;
+$font-family-title: $font-family-serif;
+
+$box-shadow-outline: 0 0 0 1px rgba(0, 0, 0, 0.05);
