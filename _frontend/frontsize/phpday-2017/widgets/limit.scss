@@ -1,0 +1,7 @@
+.limit {
+  @include limit((
+      '>=desktop-large': 1600px,
+      '>=desktop-small': 1280px,
+      '>=tablet-large': 1024px
+  ));
+}

@@ -1,7 +1,38 @@
 @include block ('header') {
   background-color: $color-background;
   left: 0;
+  padding: s(5);
   position: fixed;
   right: 0;
   top: 0;
+
+  @include media ('<tablet-small') {
+    padding: s(2);
+  }
+
+  @include media ('<desktop-small') {
+    padding: s(3);
+  }
+
+  @include element ('row') {
+    display: table;
+  }
+
+  @include element ('logo') {
+    display: table-cell;
+    padding-right: s(2);
+    vertical-align: middle;
+  }
+
+  @include element ('logo-image') {
+    height: 21px;
+    width: 40px;
+  }
+
+  @include element ('conf-name') {
+    display: table-cell;
+    font-family: $font-header;
+    font-size: 18px;
+    vertical-align: middle;
+  }
 }

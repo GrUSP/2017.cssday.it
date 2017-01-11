@@ -1,4 +1,5 @@
 _frontend/build
+_frontend/temp
 _site/
 .DS_Store
 .jekyll-metadata

@@ -22,14 +22,14 @@ css:
   file: frontsize.min.css
   themes:
     -
-      autoprefixer: true
+      autoprefixer: false
       compile: _frontend/frontsize/phpday-2017/import.scss
       csslint: false
       file: phpday.css
       images: _frontend/frontsize/phpday-2017/img/**/*.*
       merge: true
       name: phpday
-      path: node_modules/dustman/temp
+      path: _frontend/temp/
       stylestats: false
     -
       autoprefixer: false
@@ -39,12 +39,12 @@ css:
       fonts: _frontend/frontsize/grusp/fontello/font/**/*.*
       merge: true
       name: grusp
-      path: node_modules/dustman/temp
+      path: _frontend/temp/
       stylestats: false
   vendors:
     file: vendors.min.css
     merge: true
-    path: node_modules/dustman/temp/
+    path: _frontend/temp/
     files:
       - _frontend/frontsize/grusp/fontello/css/grusp-codes.css
   watch: _frontend/frontsize/**/*.scss

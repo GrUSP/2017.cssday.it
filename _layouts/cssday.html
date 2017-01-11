@@ -4,18 +4,23 @@
 <head>
   <meta charset="utf-8">
 
-  <title>{{ page.ttl }} {{ page.conf_anno }} - {{ page.conf_data }}</title>
+  <title>{{ site.conf.name }} {{ site.conf.year }} - {{ site.conf.full_date }}</title>
 
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
   <meta property="og:url" content="http://2016.cssday.it">
-  <meta property="og:title" content="CSSDay {{ page.conf_data }} - Conference e Workshop">
+  <meta property="og:title" content="{{ site.conf.name }} {{ site.conf.year }} - {{ site.conf.full_date }}">
   <meta property="og:image" content="http://2016.cssday.it/img/confs/css/cssday.png">
 
   <link rel="stylesheet" href="/css/frontsize.min.css">
 </head>
 
 <body>
+  {% include layout/header.html %}
+
   {{ content }}
+
+  <script src="https://use.typekit.net/mux1ajd.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </body>
 </html>
