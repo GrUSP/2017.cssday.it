@@ -1,11 +1,11 @@
 {
   "name": "cssday",
   "version": "0.0.1",
-  "description": "oneday-conf-template ====================",
+  "description": "Conference site",
   "main": "index.js",
   "devDependencies": {
     "dustman": "^1.11.55",
-    "frontsize": "git+https://github.com/ideatosrl/frontsize.git#f987f7b"
+    "frontsize": "git+https://github.com/ideatosrl/frontsize.git#f396ff0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/GrUSP/2017.cssday.it/issues"
   },
-  "homepage": "https://github.com/GrUSP/2017.cssday.it#readme"
+  "homepage": "https://github.com/GrUSP/2017.cssday.it#readme",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
 }

@@ -18,16 +18,13 @@
   }
 
   @include element ('logo-image') {
-    height: 21px;
-    width: 40px;
+    @include logo-image;
   }
 
   @include element ('conf-name') {
+    @include conf-name;
     display: table-cell;
-    font-family: $font-family-header;
-    font-size: 18px;
     vertical-align: middle;
-    white-space: nowrap;
   }
 
   @include element ('menu') {

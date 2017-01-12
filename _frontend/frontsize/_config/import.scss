@@ -3,6 +3,7 @@
 // points to frontsize folder, usually:
 // @import 'bower_components/frontsize/core/import';
 // @import 'node_modules/frontsize/core/import';
+@import '../../../node_modules/frontsize/core/vendors';
 @import '../../../node_modules/frontsize/core/import';
 
 @import 'vendor/include-media';
@@ -11,3 +12,7 @@
 @import 'vendor/spinners';
 
 @import 'vars';
+
+@import 'helper/conf-name';
+@import 'helper/logo-image';
+@import 'helper/where-when';

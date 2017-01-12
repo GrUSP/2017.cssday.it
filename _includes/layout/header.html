@@ -2,12 +2,18 @@
   <div class="limit">
     <div class="header__row">
       <a href="/" class="header__logo">
-        <img class="header__logo-image" src="/img/themes/{{ site.conf.theme }}/{{ site.conf.theme }}-logo.svg">
+        <img class="header__logo-image" src="/img/themes/{{ site.data.conference.slug_theme }}/{{ site.data.conference.slug_theme }}-logo.svg">
       </a>
       <h1 class="header__conf-name">
-        {{ site.conf.name }} {{ site.conf.year }}
+        {{ site.data.conference.name }} {{ site.data.conference.year }}
       </h1>
       <nav class="header__menu">
+        <a href="#" id="open-menu" class="button button--menu">
+          <i class="icon-minus"></i>
+          <i class="icon-minus"></i>
+          <i class="icon-minus"></i>
+        </a>
+        <!-- cssday
         <div class="header__menu-desktop">
           <a href="#" class="button">
             Speakers
@@ -27,12 +33,13 @@
         </div>
 
         <div class="header__menu-mobile">
-          <a href="#" class="button button--menu">
+          <a href="#" id="open-menu" class="button button--menu">
             <i class="icon-minus"></i>
             <i class="icon-minus"></i>
             <i class="icon-minus"></i>
           </a>
         </div>
+      -->
       </nav>
     </div>
   </div>

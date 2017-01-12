@@ -30,6 +30,11 @@
     position: relative;
     width: 38px;
 
+    &:hover {
+      background-color: lighten($color-background-action, 5%);
+      color: $color-text-action;
+    }
+
     .icon-minus {
       color: $color-text-action;
       left: 9px;

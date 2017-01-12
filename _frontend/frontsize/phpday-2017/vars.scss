@@ -11,11 +11,22 @@ $color-white: rgb(255, 255, 255);
 $color-background-action: $color-carnation;
 $color-background-dark: $color-mine-shaft;
 $color-background: $color-white;
+
+$color-menu-button-alt: $color-carnation;
+$color-menu-button: $color-white;
+$color-menu-left: rgba($color-jordy-blue, 0.975);
+$color-menu-right: rgba($color-mine-shaft, 0.975);
+
 $color-text-action: $color-white;
 $color-text-info: $color-jordy-blue;
+$color-text-speaker-name-alt: $color-jordy-blue;
+$color-text-speaker-name: $color-white;
 $color-text: $color-mine-shaft;
 
+$color-twitter-link: $color-carnation;
+
 $font-family-header: $font-family-sans;
+$font-family-speaker: $font-family-sans;
 $font-family-text: $font-family-sans;
 $font-family-title: $font-family-serif;
 

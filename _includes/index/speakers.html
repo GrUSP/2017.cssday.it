@@ -1,0 +1,37 @@
+<div class="speakers-title">
+  <div class="mega-info mega-info--huge">
+    <div class="mega-info__number">20+</div>
+    <div class="mega-info__text">Speakers</div>
+  </div>
+</div>
+
+<div class="limit">
+  <div class="speakers">
+    {% for speaker in site.data.speakers %}
+      <div class="speakers__column">
+        <div class="speaker">
+          <div class="speaker__pic" style="background-image:url('/img/{{ site.data.conference.slug_theme }}/speakers/{{ speaker.image }}');"></div>
+          <div class="speaker__full-name">
+            <div class="speaker__name">
+              {{ speaker.name }}
+            </div>
+            <div class="speaker__name">
+              {{ speaker.surname }}
+            </div>
+          </div>
+          <div class="speaker__description">
+            {{ speaker.description }}
+          </div>
+          <a class="speaker__twitter-link" href="https://twitter.com/{{ speaker.twitter }}">
+            @{{ speaker.twitter }}
+          </a>
+        </div>
+      </div>
+    {% endfor %}
+    {% if site.data.speakers.size < site.data.conference.speakers_max %}
+      <div class="speakers__column speakers__column--cfp">
+        More speakers
+      </div>
+    {% endif %}
+  </div>
+</div>

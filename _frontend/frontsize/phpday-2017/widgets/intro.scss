@@ -55,10 +55,8 @@
   }
 
   @include element ('where-when') {
-    font-family: $font-family-title;
+    @include where-when;
     font-size: 40px;
-    font-style: italic;
-    font-weight: bold;
 
     @include media ('<tablet-small') {
       font-size: 20px;

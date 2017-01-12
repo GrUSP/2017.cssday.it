@@ -125,6 +125,12 @@
       "css": "minus-1",
       "code": 59409,
       "src": "fontawesome"
+    },
+    {
+      "uid": "11e664deed5b2587456a4f9c01d720b6",
+      "css": "cancel",
+      "code": 59410,
+      "src": "iconic"
     }
   ]
 }

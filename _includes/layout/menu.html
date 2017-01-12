@@ -1,0 +1,74 @@
+<div id="menu" class="menu">
+
+  <div class="menu__left">
+    <div class="menu__conf">
+      <div class="menu__conf-name">
+        {{ site.data.conference.name }} {{ site.data.conference.year }}
+      </div>
+      <div class="menu__conf-logo">
+        <img class="menu__conf-logo-image" src="/img/themes/{{ site.data.conference.slug_theme }}/{{ site.data.conference.slug_theme }}-logo.svg">
+      </div>
+    </div>
+    <div class="menu__footer">
+      <div class="menu__where-when">
+        {{ site.data.conference.where_when }}
+      </div>
+      <a href="#" class="menu__register">
+        Register<br>
+        now
+      </a>
+    </div>
+  </div>
+
+  <div class="menu__right">
+    <div class="menu__cancel">
+      <i id="menu-cancel" class="icon-cancel"></i>
+    </div>
+
+    <nav>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__button">
+            Schedule
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__button">
+            Ticket
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__button">
+            Sponsor
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__button">
+            Talks
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__button">
+            Venue
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__button">
+            Newsletter
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__button">
+            Location
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__button">
+            JSday
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+</div>

@@ -1,5 +1,6 @@
 @include block ('mega-info') {
   color: $color-text-info;
+  display: inline-block;
   font-size: 300px;
   font-weight: 700;
   line-height: 0.75;
@@ -9,20 +10,58 @@
   vertical-align: baseline;
   white-space: nowrap;
 
-  & + & {
-    margin-top: s(4);
+  @include modifier ('huge') {
+    $font-size: 340px;
+    font-size: $font-size;
+
+    @include media ('>=tablet-large') {
+      font-size: s(0.75, $font-size);
+    }
+
+    @include media ('<tablet-large') {
+      font-size: s(0.5, $font-size);
+    }
+
+    @include media ('<tablet-small') {
+      font-size: s(0.35, $font-size);
+    }
 
     @include media ('<mobile-large') {
-      margin-top: s(2);
+      font-size: s(0.25, $font-size);
+    }
+
+    @include element ('text') {
+      font-size: 40%;
     }
   }
 
-  @include media ('<=tablet-small') {
-    font-size: 200px;
+  & + & {
+    margin-top: s(4);
   }
 
-  @include media ('<mobile-large') {
-    font-size: 174px;
+  @include modifier ('responsive') {
+
+    & + & {
+      @include media ('<mobile-large') {
+        margin-top: s(2);
+      }
+    }
+
+    @include media ('>=tablet-large') {
+      font-size: 300px;
+    }
+
+    @include media ('<tablet-large') {
+      font-size: 200px;
+    }
+
+    @include media ('<tablet-small') {
+      font-size: 150px;
+    }
+
+    @include media ('<mobile-large') {
+      font-size: 174px;
+    }
   }
 
   @include element ('number') {
