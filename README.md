@@ -63,6 +63,8 @@ Now you can watch your CSS build with this:
 
 For test the local view go to [http://127.0.0.1:4000](localhost)
 
+---
+
 Coded with &#9825; by [@vitto](https://github.com/vitto)
 
 [jekyll]: https://jekyllrb.com/
