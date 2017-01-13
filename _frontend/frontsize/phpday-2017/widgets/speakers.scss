@@ -12,7 +12,24 @@
 
   @include element ('column') {
     @include modifier ('cfp') {
+      font-family: $font-family-title;
+      font-style: italic;
+      font-weight: 700;
+      line-height: 42px;
       padding: s(4);
+
+      @include media ('<tablet-small') {
+        padding: 0;
+        width: 100%;
+      }
+
+      .button {
+        display: block;
+
+        &:hover {
+          color: $color-text-info;
+        }
+      }
     }
   }
 }

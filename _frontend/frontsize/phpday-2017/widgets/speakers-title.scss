@@ -6,6 +6,7 @@
   top: s(-12);
 
   @include media ('<desktop-small') {
+    margin-bottom: 0;
     top: 0;
   }
 }

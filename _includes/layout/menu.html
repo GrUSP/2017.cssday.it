@@ -6,17 +6,23 @@
         {{ site.data.conference.name }} {{ site.data.conference.year }}
       </div>
       <div class="menu__conf-logo">
-        <img class="menu__conf-logo-image" src="/img/themes/{{ site.data.conference.slug_theme }}/{{ site.data.conference.slug_theme }}-logo.svg">
+        <img class="menu__conf-logo-image" src="/img/themes/{{ site.data.conference.slug }}/{{ site.data.conference.slug }}-logo.svg">
       </div>
     </div>
     <div class="menu__footer">
-      <div class="menu__where-when">
+      <a href="{{ site.data.venue.map }}" target="_blank" class="menu__where-when">
         {{ site.data.conference.where_when }}
-      </div>
-      <a href="#" class="menu__register">
-        Register<br>
-        now
       </a>
+      {% if site.data.tickets.sold_out %}
+        <div class="menu__register menu__register--sold-out">
+          sold out
+        </div>
+      {% else %}
+        <a href="{{ site.data.tickets.url }}" class="menu__register">
+          Register<br>
+          now
+        </a>
+      {% endif %}
     </div>
   </div>
 
@@ -33,9 +39,15 @@
           </a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__button">
-            Ticket
-          </a>
+          {% if site.data.tickets.sold_out %}
+            <span class="menu__button menu__button--sold-out">
+              Ticket
+            </span>
+          {% else %}
+            <a href="{{ site.data.tickets.url }}" class="menu__button">
+              Tickets
+            </a>
+          {% endif %}
         </li>
         <li class="menu__item">
           <a href="#" class="menu__button">

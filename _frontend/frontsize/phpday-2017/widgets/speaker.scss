@@ -16,6 +16,10 @@
     height: 300px;
     transition: filter 0.25s ease-in-out;
     width: 100%;
+
+    @include media ('<mobile-large') {
+      height: 220px;
+    }
   }
 
   @include element ('full-name') {

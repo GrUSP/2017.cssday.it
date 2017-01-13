@@ -2,6 +2,7 @@
   color: $color-background-action;
   display: inline-block;
   font-family: $font-family-header;
+  font-style: normal;
   font-weight: 700;
   padding: s(1) s(2);
   text-decoration: none;
@@ -10,6 +11,10 @@
 
   &:hover {
     color: $color-text;
+  }
+
+  @include modifier ('left') {
+    margin-left: s(-2);
   }
 
   @include modifier ('register') {

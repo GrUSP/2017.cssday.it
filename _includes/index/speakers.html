@@ -7,10 +7,10 @@
 
 <div class="limit">
   <div class="speakers">
-    {% for speaker in site.data.speakers %}
+    {% for speaker in site.data.speakers.list %}
       <div class="speakers__column">
         <div class="speaker">
-          <div class="speaker__pic" style="background-image:url('/img/{{ site.data.conference.slug_theme }}/speakers/{{ speaker.image }}');"></div>
+          <div class="speaker__pic" style="background-image:url('/img/{{ site.data.conference.slug }}/speakers/{{ speaker.image }}');"></div>
           <div class="speaker__full-name">
             <div class="speaker__name">
               {{ speaker.name }}
@@ -28,9 +28,12 @@
         </div>
       </div>
     {% endfor %}
-    {% if site.data.speakers.size < site.data.conference.speakers_max %}
+    {% if site.data.speakers.list.size < site.data.speakers.limit %}
       <div class="speakers__column speakers__column--cfp">
-        More speakers
+        More speakers coming soon
+        <a href="#" class="button button--left">
+          Call for Paper
+        </a>
       </div>
     {% endif %}
   </div>

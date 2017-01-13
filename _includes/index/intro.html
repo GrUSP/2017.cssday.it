@@ -1,4 +1,4 @@
-<div class="intro" style="background-image:url('/img/themes/{{ site.data.conference.slug_theme }}/intro.jpg');">
+<div class="intro" style="background-image:url('/img/themes/{{ site.data.conference.slug }}/intro.jpg');">
   <div class="limit">
     <h2 class="intro__title">
       The Italian<br>
@@ -8,8 +8,18 @@
       {{ site.data.conference.where_when }}
     </h3>
   </div>
-  <a href="#" class="intro__register">
-    <i class="icon-play-1 intro__icon"></i>
-    register now
-  </a>
+
+  {% if site.data.tickets.sold_out %}
+    <span class="intro__register intro__register--sold-out">
+      <i class="intro__icon icon-cancel"></i>
+      Sold out
+    </span>
+  {% else %}
+    <a href="{{ site.data.tickets.url }}" class="intro__register">
+      <i class="intro__icon icon-play-1"></i>
+      Register now
+    </a>
+  {% endif %}
+
+
 </div>

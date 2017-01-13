@@ -8,8 +8,16 @@ $color-jordy-blue: rgb(139, 171, 234);
 $color-mine-shaft: rgb(45, 45, 45);
 $color-white: rgb(255, 255, 255);
 
+$color-facebook: #3b5998;
+$color-flickr: #0063dc;
+$color-gplus: #dd4b39;
+$color-twitter: #1da1f2;
+$color-vimeo: #162221;
+$color-youtube: #cd201f;
+
 $color-background-action: $color-carnation;
 $color-background-dark: $color-mine-shaft;
+$color-background-info: $color-jordy-blue;
 $color-background: $color-white;
 
 $color-menu-button-alt: $color-carnation;
@@ -24,6 +32,7 @@ $color-text-speaker-name: $color-white;
 $color-text: $color-mine-shaft;
 
 $color-twitter-link: $color-carnation;
+$color-text-venue: $color-carnation;
 
 $font-family-header: $font-family-sans;
 $font-family-speaker: $font-family-sans;

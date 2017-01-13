@@ -10,6 +10,10 @@
   vertical-align: baseline;
   white-space: nowrap;
 
+  & + & {
+    margin-top: s(4);
+  }
+
   @include modifier ('huge') {
     $font-size: 340px;
     font-size: $font-size;
@@ -35,8 +39,29 @@
     }
   }
 
-  & + & {
-    margin-top: s(4);
+  @include modifier ('big') {
+    $font-size: 200px;
+    font-size: $font-size;
+
+    @include media ('<desktop-large') {
+      font-size: s(0.75, $font-size);
+    }
+
+    @include media ('<tablet-large') {
+      font-size: s(0.6, $font-size);
+    }
+
+    @include media ('<tablet-small') {
+      font-size: s(0.4, $font-size);
+    }
+
+    @include media ('<mobile-large') {
+      font-size: s(0.22, $font-size);
+    }
+
+    @include element ('text') {
+      font-size: 40%;
+    }
   }
 
   @include modifier ('responsive') {
@@ -65,11 +90,27 @@
   }
 
   @include element ('number') {
-    float: left;
+    display: inline;
+
+    &:first-child {
+      margin-right: -10%;
+    }
   }
 
   @include element ('text') {
     display: inline;
     font-size: 28%;
+
+    &:first-child {
+      margin-right: -10%;
+    }
+
+    @include modifier ('lowercase') {
+      text-transform: lowercase;
+
+      &:first-child {
+        margin-right: -5%;
+      }
+    }
   }
 }

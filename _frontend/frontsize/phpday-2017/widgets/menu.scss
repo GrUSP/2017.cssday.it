@@ -114,6 +114,7 @@
 
   @include element ('button') {
     color: $color-menu-button-alt;
+    display: inline-block;
     font-family: $font-family-header;
     font-size: 40px;
     font-weight: 700;
@@ -123,6 +124,28 @@
 
     &:hover {
       color: $color-menu-button;
+    }
+
+    @include modifier ('sold-out') {
+      cursor: default;
+      position: relative;
+
+      &:hover {
+        $transparent: rgba($color-menu-button-alt, 0.3);
+        color: $transparent;
+      }
+
+      &::after {
+        background-color: $color-menu-button-alt;
+        border: 2px solid $color-text;
+        content: '';
+        display: block;
+        height: 4px;
+        left: -10%;
+        position: absolute;
+        top: 41%;
+        width: 120%;
+      }
     }
   }
 
@@ -136,8 +159,16 @@
 
   @include element ('where-when') {
     @include where-when;
+    color: inherit;
+    display: block;
     font-size: 26px;
     margin-bottom: s(2);
+    text-decoration: none;
+    transition: color 0.25s ease-out;
+
+    &:hover {
+      color: $color-menu-button;
+    }
   }
 
   @include element ('register') {
@@ -152,6 +183,14 @@
 
     &:hover {
       color: $color-menu-button;
+    }
+
+    @include modifier ('sold-out') {
+      background-color: $color-menu-button-alt;
+      color: $color-menu-button;
+      display: inline-block;
+      padding: 0 s(2);
+      text-align: center;
     }
   }
 }

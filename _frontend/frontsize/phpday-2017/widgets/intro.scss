@@ -82,9 +82,18 @@
 
     &:hover {
       background-color: lighten($color-background-action, 5%);
+    }
 
-      @include element ('icon') {
-        left: 0;
+    @include modifier ('sold-out') {
+      &:hover {
+        background-color: $color-background-action;
+
+        @include media ('>=tablet-large') {
+          &::after {
+            color: $color-text;
+            content: 'maybe next time!';
+          }
+        }
       }
     }
 
@@ -101,7 +110,6 @@
   @include element ('icon') {
     float: left;
     font-size: 40px;
-    left: -5px;
     position: relative;
     transition: left 0.125s ease-out;
   }
