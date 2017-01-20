@@ -1,6 +1,10 @@
+# place images in:
+# img/conf-name/speaker/file.jpg
+
 limit: 25
 list:
   -
+    id: nicolas-cage
     description: Just another developer
     image: nicolas-cage.jpg
     name: Nicolas

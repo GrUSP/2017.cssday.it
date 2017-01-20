@@ -65,7 +65,7 @@ For test the local view go to [http://127.0.0.1:4000](localhost)
 
 ---
 
-Coded with &#9825; by [@vitto](https://github.com/vitto)
+Coded with &#9825; by [@vitto](https://github.com/vitto) in [@ideato](https://www.ideato.it)
 
 [jekyll]: https://jekyllrb.com/
 [localhost]: http://127.0.0.1:4000

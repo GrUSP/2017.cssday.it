@@ -22,7 +22,7 @@ css:
   file: frontsize.min.css
   themes:
     -
-      autoprefixer: false
+      autoprefixer: true
       compile: _frontend/frontsize/phpday-2017/import.scss
       csslint: false
       file: phpday.css
@@ -32,7 +32,7 @@ css:
       path: _frontend/temp/
       stylestats: false
     -
-      autoprefixer: false
+      autoprefixer: true
       compile: _frontend/frontsize/grusp/import.scss
       csslint: false
       file: grusp.css
@@ -54,13 +54,15 @@ js:
   clean: true
   files:
     - _frontend/js/menu.js
+    - _frontend/js/newsletter.js
+    - _frontend/js/scroll-top.js
   vendors:
     file: vendors.min.js
     files:
       - node_modules/jquery/dist/jquery.js
     merge: true
     path: _frontend/temp/
-  watch: test/examples/js/**/*.js
+  watch: _frontend/js/**/*.js
 
 shell:
   after:

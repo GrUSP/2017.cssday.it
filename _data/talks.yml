@@ -1,0 +1,27 @@
+day_1:
+  -
+    keynote: true
+    speaker_id: nicolascage_
+    time: 09:45
+    title: Dockerizing your PHP CI Pipelines
+    track: 1
+    extract: >
+      This talk is intermediate level and should have a bit of something
+      for everyone whether you’re building a standard pipeline (non-docker)
+      or already have a pipeline and looking to see how docker will make it even stronger.
+      I will demonstrate how building pipe- lines with Docker differs from
+      traditional pipelines, what steps are involved in migrating.
+  -
+    keynote: true
+    speaker_id:
+      - nicolascage_
+      - pippo-pluto
+    time: 09:45
+    title: Dockerizing your PHP CI Pipelines
+    track: 1
+    extract: >
+      This talk is intermediate level and should have a bit of something
+      for everyone whether you’re building a standard pipeline (non-docker)
+      or already have a pipeline and looking to see how docker will make it even stronger.
+      I will demonstrate how building pipe- lines with Docker differs from
+      traditional pipelines, what steps are involved in migrating.

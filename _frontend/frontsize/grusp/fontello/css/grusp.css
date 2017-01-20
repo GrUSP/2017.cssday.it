@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'grusp';
-  src: url('../font/grusp.eot?38836372');
-  src: url('../font/grusp.eot?38836372#iefix') format('embedded-opentype'),
-       url('../font/grusp.woff2?38836372') format('woff2'),
-       url('../font/grusp.woff?38836372') format('woff'),
-       url('../font/grusp.ttf?38836372') format('truetype'),
-       url('../font/grusp.svg?38836372#grusp') format('svg');
+  src: url('../font/grusp.eot?93474283');
+  src: url('../font/grusp.eot?93474283#iefix') format('embedded-opentype'),
+       url('../font/grusp.woff2?93474283') format('woff2'),
+       url('../font/grusp.woff?93474283') format('woff'),
+       url('../font/grusp.ttf?93474283') format('truetype'),
+       url('../font/grusp.svg?93474283#grusp') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'grusp';
-    src: url('../font/grusp.svg?38836372#grusp') format('svg');
+    src: url('../font/grusp.svg?93474283#grusp') format('svg');
   }
 }
 */
@@ -74,5 +74,9 @@
 .icon-location-1:before { content: '\e810'; } /* '' */
 .icon-minus-1:before { content: '\e811'; } /* '' */
 .icon-cancel:before { content: '\e812'; } /* '' */
+.icon-check:before { content: '\e813'; } /* '' */
 .icon-menu:before { content: '\f008'; } /* '' */
+.icon-check-empty:before { content: '\f096'; } /* '' */
+.icon-circle-empty:before { content: '\f10c'; } /* '' */
+.icon-circle:before { content: '\f111'; } /* '' */
 .icon-youtube:before { content: '\f313'; } /* '' */

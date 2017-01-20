@@ -23,6 +23,16 @@
     margin-left: s(1);
   }
 
+  @include modifier ('footer') {
+    color: $color-text;
+    margin-bottom: s(1);
+    margin-right: s(1);
+
+    & + & {
+      margin-left: 0;
+    }
+  }
+
   @include -social-color('facebook', $color-facebook);
   @include -social-color('twitter', $color-twitter);
   @include -social-color('gplus', $color-gplus);

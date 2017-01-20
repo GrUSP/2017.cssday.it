@@ -1,5 +1,5 @@
-cfp_url: https://goo.gl/forms/NpVU3q7xmcSaspsJ2
-cfs: true # NOT USED
+call_for_paper_url: https://goo.gl/forms/NpVU3q7xmcSaspsJ2
+call_for_sponsor: true # NOT USED
 name: PHP day
 og_image: http://2016.cssday.it/img/confs/css/cssday.png
 slug: phpday

@@ -1,0 +1,128 @@
+# place images in:
+# img/sponsors/file.jpg
+# img/sponsors/guide.pdf
+
+pdf: sponsor_adespresso.png
+
+diamond:
+  -
+    url: http://adespresso.com
+    image: sponsor_adespresso.png
+
+platinum:
+  -
+    url: http://adespresso.com
+    image: sponsor_inode.png
+  -
+    url: http://i3p.com
+    image: fabbrucci.png
+
+gold:
+  -
+    url: http://adespresso.com
+    image: sponsor_inode.png
+  -
+    url: http://i3p.com
+    image: fabbrucci.png
+  -
+    url: http://adespresso.com
+    image: faventia.jpg
+  -
+    url: http://i3p.com
+    image: sponsor_3.jpg
+
+silver:
+  -
+    url: http://adespresso.com
+    image: sponsor_inode.png
+  -
+    url: http://i3p.com
+    image: fabbrucci.png
+  -
+    url: http://adespresso.com
+    image: faventia.jpg
+  -
+    url: http://i3p.com
+    image: sponsor_3.jpg
+  -
+    url: http://adespresso.com
+    image: sponsor_inode.png
+  -
+    url: http://i3p.com
+    image: fabbrucci.png
+
+bronze:
+  -
+    url: http://adespresso.com
+    image: sponsor_inode.png
+  -
+    url: http://i3p.com
+    image: fabbrucci.png
+  -
+    url: http://adespresso.com
+    image: faventia.jpg
+  -
+    url: http://i3p.com
+    image: sponsor_3.jpg
+  -
+    url: http://adespresso.com
+    image: sponsor_inode.png
+  -
+    url: http://i3p.com
+    image: fabbrucci.png
+  -
+    url: http://adespresso.com
+    image: faventia.jpg
+  -
+    url: http://i3p.com
+    image: sponsor_3.jpg
+  -
+    url: http://adespresso.com
+    image: sponsor_inode.png
+  -
+    url: http://i3p.com
+    image: fabbrucci.png
+  -
+    url: http://adespresso.com
+    image: faventia.jpg
+  -
+    url: http://i3p.com
+    image: sponsor_3.jpg
+  -
+    url: http://adespresso.com
+    image: sponsor_inode.png
+  -
+    url: http://i3p.com
+    image: fabbrucci.png
+  -
+    url: http://adespresso.com
+    image: faventia.jpg
+  -
+    url: http://i3p.com
+    image: sponsor_3.jpg
+
+partners:
+  -
+    url: http://adespresso.com
+    image: sponsor_inode.png
+  -
+    url: http://i3p.com
+    image: fabbrucci.png
+  -
+    url: http://adespresso.com
+    image: faventia.jpg
+  -
+    url: http://i3p.com
+    image: sponsor_3.jpg
+  -
+    url: http://adespresso.com
+    image: sponsor_inode.png
+  -
+    url: http://i3p.com
+    image: fabbrucci.png
+  -
+    url: http://adespresso.com
+    image: faventia.jpg
+  -
+    url: http://i3p.com
+    image: sponsor_3.jpg

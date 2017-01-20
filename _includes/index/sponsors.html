@@ -1,0 +1,122 @@
+<div class="sponsors">
+  <h4 class="sponsors__thanks">
+    Thanks<br>
+    to
+  </h4>
+
+  <div class="sponsors__contents">
+    <div class="limit">
+
+      {% if site.data.sponsors.diamond %}
+      <div class="sponsors__category">
+        <div class="sponsors__title">
+          diamond
+        </div>
+        <div class="sponsors__diamond">
+          {% for sponsor in site.data.sponsors.diamond %}
+            <div class="sponsors__diamond-column">
+              <a href="{{ sponsor.url }}" class="sponsors__link">
+                <div style="background-image:url('/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if site.data.sponsors.platinum %}
+      <div class="sponsors__category">
+        <div class="sponsors__title">
+          platinum
+        </div>
+        <div class="sponsors__platinum">
+          {% for sponsor in site.data.sponsors.platinum %}
+            <div class="sponsors__platinum-column">
+              <a href="{{ sponsor.url }}" class="sponsors__link">
+                <div style="background-image:url('/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if site.data.sponsors.gold %}
+      <div class="sponsors__category">
+        <div class="sponsors__title">
+          gold
+        </div>
+        <div class="sponsors__gold">
+          {% for sponsor in site.data.sponsors.gold %}
+            <div class="sponsors__gold-column">
+              <a href="{{ sponsor.url }}" class="sponsors__link">
+                <div style="background-image:url('/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if site.data.sponsors.silver %}
+      <div class="sponsors__category">
+        <div class="sponsors__title">
+          silver
+        </div>
+        <div class="sponsors__silver">
+          {% for sponsor in site.data.sponsors.silver %}
+            <div class="sponsors__silver-column">
+              <a href="{{ sponsor.url }}" class="sponsors__link">
+                <div style="background-image:url('/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if site.data.sponsors.bronze %}
+      <div class="sponsors__category">
+        <div class="sponsors__title">
+          bronze
+        </div>
+        <div class="sponsors__bronze">
+          {% for sponsor in site.data.sponsors.bronze %}
+            <div class="sponsors__bronze-column">
+              <a href="{{ sponsor.url }}" class="sponsors__link">
+                <div style="background-image:url('/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% if site.data.sponsors.partners %}
+      <div class="sponsors__category">
+        <div class="sponsors__title-right">
+          Media partners
+        </div>
+        <div class="sponsors__partner">
+          {% for partner in site.data.sponsors.partners %}
+            <div class="sponsors__partner-column">
+              <a href="{{ partner.url }}" class="sponsors__link">
+                <div style="background-image:url('/img/sponsors/{{ partner.image }}');" class="sponsors__image"></div>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+    </div>
+  </div>
+
+  <div class="limit">
+    <div class="sponsors__became">
+      Became a Sponsor!
+    </div>
+    <a href="#" class="button button--left">Download PDF</a>
+  </div>
+
+</div>

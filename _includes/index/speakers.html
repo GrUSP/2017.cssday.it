@@ -10,7 +10,7 @@
     {% for speaker in site.data.speakers.list %}
       <div class="speakers__column">
         <div class="speaker">
-          <div class="speaker__pic" style="background-image:url('/img/{{ site.data.conference.slug }}/speakers/{{ speaker.image }}');"></div>
+          <div class="speaker__pic" style="background-image:url('/img/{{ site.data.conference.slug }}/speaker/{{ speaker.image }}');"></div>
           <div class="speaker__full-name">
             <div class="speaker__name">
               {{ speaker.name }}
@@ -31,7 +31,7 @@
     {% if site.data.speakers.list.size < site.data.speakers.limit %}
       <div class="speakers__column speakers__column--cfp">
         More speakers coming soon
-        <a href="#" class="button button--left">
+        <a href="{{ site.data.conference.call_for_paper_url }}" class="button button--left">
           Call for Paper
         </a>
       </div>
