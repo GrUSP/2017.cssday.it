@@ -52,13 +52,13 @@ jekyll serve
 Now you can watch your CSS build with this:
 
 ```
-./node_modules/.bin/gulp watch -S --config dustman-confname.yml
+./node_modules/.bin/gulp watch -S --config dustman-conference-name.yml
 ```
 
 #### CSS and JavaScript + view HTML pages
 
 ```
-./node_modules/.bin/gulp -S --config dustman-confname.yml && jekyll serve
+./node_modules/.bin/gulp -S --config dustman-conference-name.yml && jekyll serve
 ```
 
 For test the local view go to [http://127.0.0.1:4000](localhost)
