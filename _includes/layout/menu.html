@@ -18,7 +18,7 @@
           sold out
         </div>
       {% else %}
-        <a href="{{ site.data.tickets.url }}" class="menu__register">
+        <a href="{{ site.data.tickets.url }}" target="_blank" class="menu__register">
           Register<br>
           now
         </a>
@@ -33,49 +33,44 @@
 
     <nav>
       <ul class="menu__list">
-        <li class="menu__item">
+        <!-- <li class="menu__item">
           <a href="#" class="menu__button">
             Schedule
           </a>
-        </li>
+        </li> -->
         <li class="menu__item">
           {% if site.data.tickets.sold_out %}
             <span class="menu__button menu__button--sold-out">
-              Ticket
+              Tickets
             </span>
           {% else %}
-            <a href="{{ site.data.tickets.url }}" class="menu__button">
+            <a href="{{ site.data.tickets.url }}" target="_blank" class="menu__button">
               Tickets
             </a>
           {% endif %}
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__button">
+          <a href="/sponsor/" class="menu__button">
             Sponsor
           </a>
         </li>
-        <li class="menu__item">
+        <!-- <li class="menu__item">
           <a href="#" class="menu__button">
             Talks
           </a>
-        </li>
+        </li> -->
         <li class="menu__item">
-          <a href="#" class="menu__button">
+          <a href="#venue" class="menu__button">
             Venue
           </a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__button">
+          <a href="#newsletter" class="menu__button">
             Newsletter
           </a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__button">
-            Location
-          </a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__button">
+          <a href="http://{{ site.data.conference.year }}.jsday.it" class="menu__button">
             JSday
           </a>
         </li>

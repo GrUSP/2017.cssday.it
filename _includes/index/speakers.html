@@ -28,10 +28,10 @@
         </div>
       </div>
     {% endfor %}
-    {% if site.data.speakers.list.size < site.data.speakers.limit %}
+    {% if site.data.speakers.call_for_paper %}
       <div class="speakers__column speakers__column--cfp">
         More speakers coming soon
-        <a href="{{ site.data.conference.call_for_paper_url }}" class="button button--left">
+        <a href="{{ site.data.conference.call_for_paper_url }}" target="_blank" class="button button--left">
           Call for Paper
         </a>
       </div>

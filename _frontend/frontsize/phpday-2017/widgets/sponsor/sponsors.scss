@@ -42,6 +42,10 @@
     text-align: right;
     z-index: 1;
 
+    @include media ('<=mobile-large') {
+      margin-bottom: s(-6);
+    }
+
     @include media ('>mobile-small') {
       font-size: 75px;
     }
@@ -65,34 +69,30 @@
 
   @include element ('became') {
     @include where-when;
-    font-size: 68px;
+    font-size: 18px;
     margin-top: s(4);
+
+    @include media ('>mobile-small') {
+      font-size: 24px;
+    }
+
+    @include media ('>mobile-large') {
+      font-size: 48px;
+    }
+
+    @include media ('>tablet-small') {
+      font-size: 68px;
+    }
+
+    @include media ('>tablet-large') {
+      font-size: 68px;
+    }
+
+
   }
 
   @include element ('contents') {
     background-color: $color-background;
-    // margin-top: s(-40);
-    // padding-top: s(10);
-
-    @include media ('>mobile-small') {
-      // margin-top: s(-46);
-    }
-
-    @include media ('>mobile-large') {
-      // margin-top: s(-46);
-    }
-
-    @include media ('>tablet-small') {
-      // margin-top: s(-46);
-    }
-
-    @include media ('>tablet-large') {
-      // margin-top: s(-46);
-    }
-
-    @include media ('>desktop-small') {
-      // margin-top: s(-46);
-    }
   }
 
   @include element ('link') {
@@ -110,6 +110,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     display: block;
+
+    @include media ('<=mobile-large') {
+      height: 150px !important;
+    }
   }
 
   @include element ('category') {
@@ -141,7 +145,7 @@
     text-align: right;
   }
 
-  @include element ('diamond') {
+  @include element ('main') {
     @include float-row((
         '<=mobile-large': 1,
         '>=tablet-small': 1
@@ -149,6 +153,24 @@
       @include -sponsor-cell(s(2));
 
       &:nth-child(even) {
+        background-color: $color-background-sponsor-alt;
+      }
+
+      @include element ('image') {
+        height: s($sponsor-scale, 660px);
+      }
+    }
+  }
+
+  @include element ('diamond') {
+    @include float-row((
+        '<=mobile-large': 1,
+        '>=tablet-small': 1
+    )) {
+      @include -sponsor-cell(s(2));
+      background-color: $color-background-sponsor;
+
+      &:nth-child(odd) {
         background-color: $color-background-sponsor-alt;
       }
 

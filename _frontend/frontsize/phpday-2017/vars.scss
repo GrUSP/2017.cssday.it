@@ -3,6 +3,7 @@ $font-family-monospace: menlo, monaco, 'courier new', monospace;
 $font-family-sans: 'proxima-nova', helvetica, arial, sans-serif;
 $font-family-serif: georgia, 'times new roman', times, serif;
 
+$color-atlantis: rgb(141, 198, 63);
 $color-black: rgb(0, 0, 0);
 $color-carnation: rgb(244, 86, 86);
 $color-jordy-blue: rgb(139, 171, 234);
@@ -10,7 +11,6 @@ $color-link-water: rgb(220, 230, 249);
 $color-mine-shaft: rgb(45, 45, 45);
 $color-white: rgb(255, 255, 255);
 $color-wild-sand: rgb(245, 245, 245);
-
 
 $color-facebook: #3b5998;
 $color-flickr: #0063dc;
@@ -39,8 +39,14 @@ $color-text-footer: $color-white;
 $color-text-form: $color-white;
 $color-text-info: $color-jordy-blue;
 $color-text-newletter-tip: mix($color-white, $color-mine-shaft);
+$color-text-question: $color-carnation;
 $color-text-speaker-name-alt: $color-jordy-blue;
 $color-text-speaker-name: $color-white;
+$color-text-sponsorship-option-infos: $color-jordy-blue;
+$color-text-sponsorship-option-text: $color-white;
+$color-text-sponsorship-option-title: $color-carnation;
+$color-text-sponsorship-option-plus: $color-atlantis;
+
 $color-text-submit: $color-carnation;
 $color-text: $color-mine-shaft;
 

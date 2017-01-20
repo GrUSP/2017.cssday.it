@@ -2,6 +2,7 @@ $(function () {
   var $menu = $('#menu');
   var $menuCancelButton = $('#menu-cancel');
   var $openButton = $('#open-menu');
+  var $button = $('a.menu__button');
 
   function toggle () {
     if ($menu.hasClass('menu--active')) {
@@ -13,6 +14,10 @@ $(function () {
 
   $openButton.on('click', function (e) {
     e.preventDefault();
+    toggle();
+  });
+
+  $button.on('click', function (e) {
     toggle();
   });
 

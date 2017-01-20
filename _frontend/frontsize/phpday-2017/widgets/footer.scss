@@ -78,6 +78,7 @@
 
   @include element ('past-edition') {
     color: $color-menu-button-alt;
+    font-weight: 700;
     text-decoration: none;
     transition: color 0.25s ease-in-out;
 

@@ -1,7 +1,7 @@
 # place images in:
 # img/conf-name/speaker/file.jpg
-
-limit: 25
+call_for_paper_url: https://goo.gl/forms/NpVU3q7xmcSaspsJ2
+call_for_paper: true
 list:
   -
     id: nicolas-cage
