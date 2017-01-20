@@ -8,9 +8,9 @@
   }
 
   @include float-row((
-      '<=mobile-large': 1,
-      '>mobile-large', '<=tablet-small': 2,
-      '>tablet-small': 3
+      '<=tablet-small': 1,
+      '>tablet-small', '<=tablet-large': 2,
+      '>tablet-large': 3
   )) {
     padding: s(2);
   }

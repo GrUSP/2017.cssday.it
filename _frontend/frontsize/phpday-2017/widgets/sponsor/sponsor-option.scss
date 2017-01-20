@@ -1,7 +1,7 @@
 @include block ('sponsor-option') {
   background-color: $color-background-dark;
   color: $color-text-sponsorship-option-text;
-  min-height: 451px;
+  min-height: 555px;
   padding: s(2);
   padding-left: s(6);
   position: relative;
@@ -9,6 +9,14 @@
 
   @include media ('<=mobile-large') {
     min-height: 0;
+  }
+
+  @include media ('<=tablet-small') {
+    padding-left: s(3);
+  }
+
+  @include media ('>=tablet-large') {
+    padding-left: s(2);
   }
 
   @include element ('title') {

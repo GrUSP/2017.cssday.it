@@ -7,7 +7,7 @@ rdiscount:
 defaults:
   -
     values:
-      layout: phpday
+      layout: base
 exclude:
   - .gitignore
   - dustman.yml
