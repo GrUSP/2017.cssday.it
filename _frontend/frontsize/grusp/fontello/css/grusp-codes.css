@@ -21,6 +21,8 @@
 .icon-check:before { content: '\e813'; } /* '' */
 .icon-menu:before { content: '\f008'; } /* '' */
 .icon-check-empty:before { content: '\f096'; } /* '' */
+.icon-coffee:before { content: '\f0f4'; } /* '' */
+.icon-food:before { content: '\f0f5'; } /* '' */
 .icon-circle-empty:before { content: '\f10c'; } /* '' */
 .icon-circle:before { content: '\f111'; } /* '' */
 .icon-youtube:before { content: '\f313'; } /* '' */

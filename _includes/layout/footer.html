@@ -1,5 +1,5 @@
 <footer class="footer">
-  <div class="limit">
+  <div class="limit limit--no-overflow">
     <div class="footer__row">
       <div class="footer__row-column">
 
@@ -11,10 +11,12 @@
         <div class="footer__past-editions">
           Browse past editions:
           <div class="footer__past-editions-items">
-            {% for year in (2012..2016) %}
-              <a class="footer__past-edition" href="http://{{ year }}.{{ site.data.conference.slug }}.it">{{ year }}</a>
+            {% for year in (site.data.conference.since..site.data.conference.year) %}
               {% if forloop.last == false %}
-                <span>|</span>
+                {% if forloop.first == false %}
+                  <span>|</span>
+                {% endif %}
+                <a class="footer__past-edition" href="http://{{ year }}.{{ site.data.conference.slug }}.it">{{ year }}</a>
               {% endif %}
             {% endfor %}
           </div>

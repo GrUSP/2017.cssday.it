@@ -17,8 +17,20 @@
       @include element ('image') {
         height: $image-height - $padding;
       }
+
       @include chessboard ($columns, $rows, $color-background-sponsor-alt);
+
+      @include media ('<tablet-small') {
+        &:nth-child(even) {
+          background-color: $color-background-sponsor;
+        }
+
+        &:nth-child(odd) {
+          background-color: $color-background-sponsor-alt;
+        }
+      }
     }
+
   }
 }
 

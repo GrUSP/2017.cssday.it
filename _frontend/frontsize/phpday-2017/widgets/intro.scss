@@ -6,6 +6,10 @@
   height: 100vh;
   position: relative;
 
+  @include modifier ('no-height') {
+    height: auto !important;
+  }
+
   @include media ('<mobile-large') {
     height: 250px;
     margin-top: 50px;
@@ -35,7 +39,7 @@
 
 
     @include media ('>=mobile-large') {
-      font-size: 70px;
+      font-size: 60px;
       margin-top: s(7);
     }
 

@@ -1,9 +1,15 @@
-.limit {
+@include block ('limit') {
+
   overflow: hidden;
   padding: s(2) s(4);
+
   @include limit((
       '>=desktop-large': 1600px,
       '>=desktop-small': 1280px,
       '>=tablet-large': 1024px
   ));
+
+  @include modifier ('no-overflow') {
+    overflow: visible;
+  }
 }

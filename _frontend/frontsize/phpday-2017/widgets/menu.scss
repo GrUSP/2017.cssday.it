@@ -25,10 +25,6 @@
 
   @include modifier ('active') {
     transform: translate(0, 0);
-
-    @include element ('right') {
-      overflow: hidden;
-    }
   }
 
   @include element ('left') {
