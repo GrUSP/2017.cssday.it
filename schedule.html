@@ -1,0 +1,42 @@
+---
+title: Schedule
+---
+
+<div class="limit limit--top-margin">
+
+  <h3>
+    schedule
+  </h3>
+
+  <h4>
+    24 marzo
+  </h4>
+
+  <div class="schedule">
+    <table class="schedule__table">
+      <thead>
+        <tr>
+          <th class="schedule__head schedule__head--lower schedule__time">
+            Time
+          </th>
+          <th class="schedule__head schedule__head--upper">
+            Track1
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% include schedule/event.html time='8.30-9:30' title='Check-in' %}
+        {% include schedule/event.html time='9.30-9.45' title='Presentazione GrUSP' %}
+        {% include schedule/talk.html time='9.45-10.45' title='Developing PHP' speaker='James Pipiloca' keynote=true %}
+        {% include schedule/break.html time='10.45-11.00' %}
+        {% include schedule/talk.html time='11.00-12.00' title='Your API is a UI' speaker='Mike SeBevi' %}
+        {% include schedule/lunch.html time='13.00-14.30' %}
+        {% include schedule/event.html time='14.30-15.00' title='Chiusura' %}
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+{% include index/newsletter.html %}
+{% include index/sponsors.html %}

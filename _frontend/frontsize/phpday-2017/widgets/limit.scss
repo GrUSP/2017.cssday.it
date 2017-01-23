@@ -9,6 +9,10 @@
       '>=tablet-large': 1024px
   ));
 
+  @include modifier ('top-margin') {
+    margin-top: s(8);
+  }
+
   @include modifier ('no-overflow') {
     overflow: visible;
   }

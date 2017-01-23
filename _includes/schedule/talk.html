@@ -1,0 +1,16 @@
+<tr>
+  <td class="schedule__cell schedule__cell--time">
+    {{ include.time }}
+  </td>
+  <td class="schedule__cell schedule__cell--event">
+    {{ include.title }}
+    <div class="schedule__detail">
+      {% if include.keynote %}
+        Keynote by
+      {% endif %}
+      <span class="schedule__speaker">
+        {{ include.speaker }}
+      </span>
+    </div>
+  </td>
+</tr>

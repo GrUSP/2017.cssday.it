@@ -1,0 +1,110 @@
+@include block ('schedule') {
+
+  @include element ('table') {
+    border-collapse: collapse;
+  }
+
+  @include element ('head') {
+    background-color: $color-background-dark;
+    color: $color-text-schedule-header;
+    font-size: 24px;
+    padding: s(1) s(2);
+    text-align: left;
+
+    @include modifier ('upper') {
+      text-transform: uppercase;
+    }
+
+    @include modifier ('lower') {
+      padding-left: s(3);
+      text-transform: lowercase;
+    }
+  }
+
+  @include element ('cell') {
+    font-weight: 700;
+    padding: s(2) s(2) s(3);
+    vertical-align: top;
+
+    @include modifier ('time') {
+      padding-left: s(3);
+      white-space: nowrap;
+    }
+
+    @include modifier ('event') {
+      @include where-when;
+      font-size: 24px;
+      width: 100%;
+
+      @include media ('<tablet-large') {
+        font-size: 18px;
+      }
+
+      @include media ('<mobile-large') {
+        font-size: 16px;
+      }
+    }
+
+    @include modifier ('break-event') {
+      @include title-uppercase;
+      color: $color-text-info;
+      font-size: 32px;
+      line-height: 1;
+      padding-bottom: s(2);
+
+      i {
+        color: $color-text;
+        margin-right: s(1);
+      }
+
+      @include media ('<tablet-large') {
+        font-size: 24px;
+      }
+    }
+
+    @include modifier ('break') {
+      border: 1px solid $color-background-dark;
+      border-left: 0;
+      border-right: 0;
+    }
+  }
+
+  @include element ('detail') {
+    @include title;
+    font-size: 12px;
+    margin-top: s(0.5);
+
+    @include media ('<mobile-large') {
+      font-size: 11px;
+    }
+  }
+
+  @include element ('speaker') {
+    color: $color-text-schedule-speaker;
+    text-decoration: none;
+  }
+
+  @include media ('<tablet-large') {
+    margin-left: s(-4);
+    margin-right: s(-4);
+
+    @include element ('head') {
+      @include modifier ('lower') {
+        padding-right: 0;
+      }
+    }
+
+    @include element ('cell') {
+      padding: s(2);
+
+      @include modifier ('time') {
+        padding-right: 0;
+        text-align: right;
+
+        @include media ('<mobile-large') {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
