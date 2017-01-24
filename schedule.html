@@ -4,62 +4,182 @@ title: Schedule
 
 <div class="limit limit--top-margin">
 
-  <h3>
-    schedule
-  </h3>
+  {% include schedule/intro.html date='May 12th' %}
 
-  <h4>
-    24 marzo
-  </h4>
-
-  <div class="schedule">
+  <div class="schedule" data-dates="5-12,1-24,1-25">
     <table class="schedule__table">
       <thead>
-        {% include schedule/header-full.html %}
+        {% include schedule/header.html tracks='3' %}
       </thead>
       <tbody>
-        {% include schedule/event.html time='8.30-9:30' title='Check-in' fill='true' %}
-        {% include schedule/event.html time='9.30-9:45' title='Presentazione GrUSP' fill='true' %}
+        {% include schedule/event.html time='8.30-9.30' title='Check-in' fill='true' %}
+        {% include schedule/event.html time='9.30-9.45' title='Presentazione GrUSP' fill='true' %}
 
-        {% include schedule/talk.html time='9.45-10:45' title='Deploying PHP 7' keynote='true' fill='true' %}
+        {% include schedule/talk.html time='9.45-10.45' title='Deploying PHP 7' keynote='true' fill='true' %}
 
-        {% include schedule/pause.html time='10.45-11:00' title='Short break' icon="coffee" fill='true' %}
+        {% include schedule/pause.html time='10.45-11.00' title='Short break' icon="coffee" fill='true' %}
 
         <tr>
-          {% include schedule/talk.html title='Your API is a UI' time='11.00-12:00' %}
-          {% include schedule/talk.html title='PHP 7 performances from PHP 5' %}
-          {% include schedule/talk.html title='Ah quindi non... PHP' %}
+          {% include schedule/talk.html title='Your API is a UI' time='11.00-12.00' %}
+          {% include schedule/talk.html title='Deploying PHP 7' %}
+          {% include schedule/talk.html title='Deploying PHP 7' %}
         </tr>
 
-        {% include schedule/pause.html time='13.00-14:30' title='Lunch' icon="food" fill='true' %}
+        {% include schedule/pause.html time='13.00-14.30' title='Lunch' icon="food" fill='true' %}
 
         <tr>
-          {% include schedule/talk.html title='Your API is a UI' time='14:30-15:30' %}
-          {% include schedule/talk.html title='PHP 7 performances from PHP 5' %}
-          {% include schedule/talk.html title='Ah quindi non... PHP' %}
-        </tr>
-
-        <tr>
-          {% include schedule/talk.html title='Your API is a UI' time='15:30-16:30' %}
-          {% include schedule/talk.html title='PHP 7 performances from PHP 5' %}
-          {% include schedule/talk.html title='Ah quindi non... PHP' %}
-        </tr>
-
-        {% include schedule/pause.html time='16.30-17:00' title='Coffee break' icon="coffee" fill='true' %}
-
-        <tr>
-          {% include schedule/talk.html title='Your API is a UI' time='17:00-17:30' %}
+          {% include schedule/talk.html title='Your API is a UI' time='14.30-15.30' %}
           {% include schedule/talk.html title='PHP 7 performances from PHP 5' %}
           {% include schedule/talk.html title='Ah quindi non... PHP' %}
         </tr>
 
         <tr>
-          {% include schedule/talk.html title='Your API is a UI' time='17:30-18:00' %}
+          {% include schedule/talk.html title='Your API is a UI' time='15.30-16.30' %}
           {% include schedule/talk.html title='PHP 7 performances from PHP 5' %}
           {% include schedule/talk.html title='Ah quindi non... PHP' %}
         </tr>
 
-        {% include schedule/pause.html time='18.30-18:45' title='Happy hour' icon="bar" fill='true' %}
+        {% include schedule/pause.html time='16.30-17.00' title='Coffee break' icon="coffee" fill='true' %}
+
+        <tr>
+          {% include schedule/talk.html title='Your API is a UI' time='17.00-17.30' %}
+          {% include schedule/talk.html title='PHP 7 performances from PHP 5' %}
+          {% include schedule/talk.html title='Ah quindi non... PHP' %}
+        </tr>
+
+        <tr>
+          {% include schedule/talk.html title='Your API is a UI' time='17.30-18.00' %}
+          {% include schedule/talk.html title='PHP 7 performances from PHP 5' %}
+          {% include schedule/talk.html title='Ah quindi non... PHP' %}
+        </tr>
+
+        {% include schedule/pause.html time='18.30-18.45' title='Happy hour' icon="bar" fill='true' %}
+
+      </tbody>
+    </table>
+  </div>
+
+  <div class="schedule schedule--mobile" data-dates="5-12,1-24,1-25">
+    <table class="schedule__table">
+      <thead>
+        {% include schedule/header.html track='1' %}
+      </thead>
+      <tbody>
+        {% include schedule/event.html time='8.30-9.30' title='Check-in' %}
+        {% include schedule/event.html time='9.30-9.45' title='Presentazione GrUSP' %}
+
+        <tr>{% include schedule/talk.html time='9.45-10.45' title='Deploying PHP 7' keynote='true' %}</tr>
+
+        {% include schedule/pause.html time='10.45-11.00' title='Short break' icon="coffee" %}
+
+        <tr>{% include schedule/talk.html time='11.00-12.00' title='Your API is a UI' %}</tr>
+
+        {% include schedule/pause.html time='13.00-14.30' title='Lunch' icon="food" %}
+
+        <tr>{% include schedule/talk.html time='14.30-15.30' title='Deploying PHP 7' %}</tr>
+        <tr>{% include schedule/talk.html time='15.30-16.30' title='Your API is a UI' %}</tr>
+
+        {% include schedule/pause.html time='16.30-17.00' title='Coffee break' icon="coffee" %}
+
+        <tr>{% include schedule/talk.html time='17.00-17.30' title='Deploying PHP 7'  %}</tr>
+        <tr>{% include schedule/talk.html time='17.30-18.00' title='Your API is a UI' %}</tr>
+
+        {% include schedule/pause.html time='18.30-18.45' title='Happy hour' icon="bar" fill='true' %}
+
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  {% include schedule/intro.html date='May 13th' %}
+
+  <div class="schedule" data-dates="5-13">
+    <table class="schedule__table">
+      <thead>
+        {% include schedule/header.html tracks='3' %}
+      </thead>
+      <tbody>
+        {% include schedule/event.html time='8.30-9.30' title='Check-in' fill='true' %}
+        {% include schedule/event.html time='9.30-9.45' title='Presentazione GrUSP' fill='true' %}
+
+        {% include schedule/talk.html time='9.45-10.45' title='Deploying PHP 7' keynote='true' fill='true' %}
+
+        {% include schedule/pause.html time='10.45-11.00' title='Short break' icon="coffee" fill='true' %}
+
+        <tr>
+          {% include schedule/talk.html title='Your API is a UI' time='11.00-12.00' %}
+          {% include schedule/talk.html title='Deploying PHP 7' %}
+          {% include schedule/talk.html title='Deploying PHP 7' %}
+        </tr>
+
+        {% include schedule/pause.html time='13.00-14.30' title='Lunch' icon="food" fill='true' %}
+
+        <tr>
+          {% include schedule/talk.html title='Your API is a UI' time='14.30-15.30' %}
+          {% include schedule/talk.html title='PHP 7 performances from PHP 5' %}
+          {% include schedule/talk.html title='Ah quindi non... PHP' %}
+        </tr>
+
+        <tr>
+          {% include schedule/talk.html title='Your API is a UI' time='15.30-16.30' %}
+          {% include schedule/talk.html title='PHP 7 performances from PHP 5' %}
+          {% include schedule/talk.html title='Ah quindi non... PHP' %}
+        </tr>
+
+        {% include schedule/pause.html time='16.30-17.00' title='Coffee break' icon="coffee" fill='true' %}
+
+        <tr>
+          {% include schedule/talk.html title='Your API is a UI' time='17.00-17.30' %}
+          {% include schedule/talk.html title='PHP 7 performances from PHP 5' %}
+          {% include schedule/talk.html title='Ah quindi non... PHP' %}
+        </tr>
+
+        <tr>
+          {% include schedule/talk.html title='Your API is a UI' time='17.30-18.00' %}
+          {% include schedule/talk.html title='PHP 7 performances from PHP 5' %}
+          {% include schedule/talk.html title='Ah quindi non... PHP' %}
+        </tr>
+
+        {% include schedule/pause.html time='18.30-18.45' title='Happy hour' icon="bar" fill='true' %}
+
+      </tbody>
+    </table>
+  </div>
+
+  <div class="schedule schedule--mobile" data-dates="5-13">
+    <table class="schedule__table">
+      <thead>
+        {% include schedule/header.html track='1' %}
+      </thead>
+      <tbody>
+        {% include schedule/event.html time='8.30-9.30' title='Check-in' %}
+        {% include schedule/event.html time='9.30-9.45' title='Presentazione GrUSP' %}
+
+        <tr>{% include schedule/talk.html time='9.45-10.45' title='Deploying PHP 7' keynote='true' %}</tr>
+
+        {% include schedule/pause.html time='10.45-11.00' title='Short break' icon="coffee" %}
+
+        <tr>{% include schedule/talk.html time='11.00-12.00' title='Your API is a UI' %}</tr>
+
+        {% include schedule/pause.html time='13.00-14.30' title='Lunch' icon="food" %}
+
+        <tr>{% include schedule/talk.html time='14.30-15.30' title='Deploying PHP 7' %}</tr>
+        <tr>{% include schedule/talk.html time='15.30-16.30' title='Your API is a UI' %}</tr>
+
+        {% include schedule/pause.html time='16.30-17.00' title='Coffee break' icon="coffee" %}
+
+        <tr>{% include schedule/talk.html time='17.00-17.30' title='Deploying PHP 7'  %}</tr>
+        <tr>{% include schedule/talk.html time='17.30-18.00' title='Your API is a UI' %}</tr>
+
+        {% include schedule/pause.html time='18.30-18.45' title='Happy hour' icon="bar" fill='true' %}
 
       </tbody>
     </table>

@@ -1,9 +1,33 @@
 
 @include block ('schedule') {
 
+  display: block;
+  margin-bottom: s(8);
+
+  @include media ('<tablet-small') {
+    display: none;
+  }
+
+  @include modifier ('mobile') {
+    display: none;
+    @include element ('head') {
+      @include modifier ('upper') {
+        width: 100%;
+      }
+    }
+
+    @include media ('<tablet-small') {
+      display: block;
+    }
+  }
+
   @include element ('table') {
     border-collapse: collapse;
     table-layout: fixed;
+
+    tr {
+      transition: background-color 0.25s ease-in-out;
+    }
   }
 
   @include element ('head') {
@@ -32,7 +56,6 @@
 
     @include modifier ('time') {
       padding-left: s(3);
-      white-space: nowrap;
     }
 
     @include modifier ('event') {
@@ -58,10 +81,18 @@
       i {
         color: $color-text;
         margin-right: s(1);
+
+        @include media ('<tablet-small') {
+          margin-right: 0;
+        }
       }
 
       @include media ('<tablet-small') {
         font-size: 24px;
+      }
+
+      @include media ('<mobile-large') {
+        font-size: 18px;
       }
     }
 
@@ -69,6 +100,36 @@
       border: 1px solid $color-background-dark;
       border-left: 0;
       border-right: 0;
+    }
+  }
+
+  @include element ('time') {
+    white-space: nowrap;
+  }
+
+  @include element ('on-air') {
+    @include title-uppercase;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: on-air;
+    background-color: $color-background-schedule-on-air;
+    clear: both;
+    color: $color-text-schedule-on-air;
+    display: block;
+    line-height: 1;
+    margin-top: s(0.25);
+    opacity: 0;
+    padding: s(0.5) s(0.25) s(0.25);
+    text-align: center;
+    transition: opacity 0.25s ease-in-out;
+    user-select: none;
+  }
+
+  @include element ('current') {
+    background-color: $color-background-schedule-current;
+
+    @include element ('on-air') {
+      opacity: 1;
     }
   }
 
@@ -92,6 +153,12 @@
   @include element ('speaker') {
     color: $color-text-schedule-speaker;
     text-decoration: none;
+
+    & + &::before {
+      color: $color-text;
+      content: ', ';
+      margin-left: -2px;
+    }
   }
 
   @include media ('<tablet-large') {
@@ -116,5 +183,19 @@
         }
       }
     }
+  }
+}
+
+@keyframes on-air {
+  0% {
+    color: $color-text-schedule-on-air;
+  }
+
+  25% {
+    color: mix($color-background-schedule-on-air, $color-text-schedule-on-air);
+  }
+
+  50% {
+    color: $color-text-schedule-on-air;
   }
 }

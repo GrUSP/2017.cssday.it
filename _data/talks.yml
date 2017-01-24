@@ -9,9 +9,9 @@
     traditional pipelines, what steps are involved in migrating.
 -
   speaker_id:
-    - nicolascage_
-    - pippo-pluto
-  title: Dockerizing your PHP CI Pipelines
+    - nicolas-cage
+    - rasmus-lerdorf
+  title: Your API is a UI
   extract: >
     This talk is intermediate level and should have a bit of something
     for everyone whether you’re building a standard pipeline (non-docker)

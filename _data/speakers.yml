@@ -11,6 +11,7 @@ list:
     last_name: Lerdorf
     twitter: rasmuslerdorf
   -
+    id: nicolas-cage
     description: Just another developer
     image: nicolas-cage.jpg
     first_name: Nicolas

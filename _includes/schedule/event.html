@@ -1,6 +1,9 @@
 <tr>
   <td class="schedule__cell schedule__cell--time">
-    {{ include.time }}
+    <span class="schedule__time">
+      {{ include.time }}
+    </span>
+    <span class="schedule__on-air">on air</span>
   </td>
   <td class="schedule__cell schedule__cell--event" {% if include.fill %} colspan="3" {% endif %}>
     <div class="schedule__title">

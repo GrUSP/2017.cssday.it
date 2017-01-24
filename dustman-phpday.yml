@@ -55,11 +55,13 @@ js:
   files:
     - _frontend/js/menu.js
     - _frontend/js/newsletter.js
+    - _frontend/js/schedule.js
     - _frontend/js/scroll-top.js
   vendors:
     file: vendors.min.js
     files:
       - node_modules/jquery/dist/jquery.js
+      - node_modules/moment/moment.js
     merge: true
     path: _frontend/temp/
   watch: _frontend/js/**/*.js
