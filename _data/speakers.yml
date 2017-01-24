@@ -4,135 +4,135 @@ call_for_paper_url: https://goo.gl/forms/NpVU3q7xmcSaspsJ2
 call_for_paper: true
 list:
   -
-    id: nicolas-cage
+    id: rasmus-lerdorf
+    description: Rasmus Lerdorf bio
+    image: nicolas-cage.jpg
+    first_name: Rasmus
+    last_name: Lerdorf
+    twitter: rasmuslerdorf
+  -
     description: Just another developer
     image: nicolas-cage.jpg
-    name: Nicolas
-    surname: Cage
+    first_name: Nicolas
+    last_name: Cage
     twitter: nicolascage_
   -
     description: Just another developer
     image: nicolas-cage.jpg
-    name: Nicolas
-    surname: Cage
+    first_name: Nicolas
+    last_name: Cage
     twitter: nicolascage_
   -
     description: Just another developer
     image: nicolas-cage.jpg
-    name: Nicolas
-    surname: Cage
+    first_name: Nicolas
+    last_name: Cage
     twitter: nicolascage_
   -
     description: Just another developer
     image: nicolas-cage.jpg
-    name: Nicolas
-    surname: Cage
+    first_name: Nicolas
+    last_name: Cage
     twitter: nicolascage_
   -
     description: Just another developer
     image: nicolas-cage.jpg
-    name: Nicolas
-    surname: Cage
+    first_name: Nicolas
+    last_name: Cage
     twitter: nicolascage_
   -
     description: Just another developer
     image: nicolas-cage.jpg
-    name: Nicolas
-    surname: Cage
+    first_name: Nicolas
+    last_name: Cage
     twitter: nicolascage_
   -
     description: Just another developer
     image: nicolas-cage.jpg
-    name: Nicolas
-    surname: Cage
+    first_name: Nicolas
+    last_name: Cage
     twitter: nicolascage_
   -
     description: Just another developer
     image: nicolas-cage.jpg
-    name: Nicolas
-    surname: Cage
+    first_name: Nicolas
+    last_name: Cage
     twitter: nicolascage_
   -
     description: Just another developer
     image: nicolas-cage.jpg
-    name: Nicolas
-    surname: Cage
+    first_name: Nicolas
+    last_name: Cage
     twitter: nicolascage_
   -
     description: Just another developer
     image: nicolas-cage.jpg
-    name: Nicolas
-    surname: Cage
+    first_name: Nicolas
+    last_name: Cage
     twitter: nicolascage_
   -
     description: Just another developer
     image: nicolas-cage.jpg
-    name: Nicolas
-    surname: Cage
+    first_name: Nicolas
+    last_name: Cage
     twitter: nicolascage_
   -
     description: Just another developer
     image: nicolas-cage.jpg
-    name: Nicolas
-    surname: Cage
+    first_name: Nicolas
+    last_name: Cage
     twitter: nicolascage_
   -
     description: Just another developer
     image: nicolas-cage.jpg
-    name: Nicolas
-    surname: Cage
+    first_name: Nicolas
+    last_name: Cage
     twitter: nicolascage_
   -
     description: Just another developer
     image: nicolas-cage.jpg
-    name: Nicolas
-    surname: Cage
+    first_name: Nicolas
+    last_name: Cage
     twitter: nicolascage_
   -
     description: Just another developer
     image: nicolas-cage.jpg
-    name: Nicolas
-    surname: Cage
+    first_name: Nicolas
+    last_name: Cage
     twitter: nicolascage_
   -
     description: Just another developer
     image: nicolas-cage.jpg
-    name: Nicolas
-    surname: Cage
+    first_name: Nicolas
+    last_name: Cage
     twitter: nicolascage_
   -
     description: Just another developer
     image: nicolas-cage.jpg
-    name: Nicolas
-    surname: Cage
+    first_name: Nicolas
+    last_name: Cage
     twitter: nicolascage_
   -
     description: Just another developer
     image: nicolas-cage.jpg
-    name: Nicolas
-    surname: Cage
+    first_name: Nicolas
+    last_name: Cage
     twitter: nicolascage_
   -
     description: Just another developer
     image: nicolas-cage.jpg
-    name: Nicolas
-    surname: Cage
+    first_name: Nicolas
+    last_name: Cage
     twitter: nicolascage_
   -
     description: Just another developer
     image: nicolas-cage.jpg
-    name: Nicolas
-    surname: Cage
+    first_name: Nicolas
+    last_name: Cage
     twitter: nicolascage_
   -
     description: Just another developer
     image: nicolas-cage.jpg
-    name: Nicolas
-    surname: Cage
-    twitter: nicolascage_
-  -
-    description: Just another developer
-    image: nicolas-cage.jpg
-    name: Nicolas
-    surname: Cage
+    first_name: Nicolas
+    last_name: Cage
     twitter: nicolascage_

@@ -167,6 +167,12 @@
       "css": "food",
       "code": 61685,
       "src": "fontawesome"
+    },
+    {
+      "uid": "5c8822b310f20896a3c55a25b71008a8",
+      "css": "bar",
+      "code": 59412,
+      "src": "maki"
     }
   ]
 }

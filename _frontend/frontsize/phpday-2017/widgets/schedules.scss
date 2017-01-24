@@ -1,0 +1,10 @@
+@include block ('schedules') {
+  @include debug;
+  margin-left: s(-1);
+  margin-right: s(-1);
+
+  @include float-row((
+      '<tablet-small': 1,
+      '>=tablet-small': 3
+  ));
+}

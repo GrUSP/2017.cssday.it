@@ -1,7 +1,9 @@
+
 @include block ('schedule') {
 
   @include element ('table') {
     border-collapse: collapse;
+    table-layout: fixed;
   }
 
   @include element ('head') {
@@ -13,11 +15,13 @@
 
     @include modifier ('upper') {
       text-transform: uppercase;
+      width: 30%;
     }
 
     @include modifier ('lower') {
       padding-left: s(3);
       text-transform: lowercase;
+      width: 10%;
     }
   }
 
@@ -34,9 +38,8 @@
     @include modifier ('event') {
       @include where-when;
       font-size: 24px;
-      width: 100%;
 
-      @include media ('<tablet-large') {
+      @include media ('<tablet-small') {
         font-size: 18px;
       }
 
@@ -57,7 +60,7 @@
         margin-right: s(1);
       }
 
-      @include media ('<tablet-large') {
+      @include media ('<tablet-small') {
         font-size: 24px;
       }
     }
@@ -66,6 +69,13 @@
       border: 1px solid $color-background-dark;
       border-left: 0;
       border-right: 0;
+    }
+  }
+
+  @include element ('title') {
+    @include modifier ('centered') {
+      margin: auto;
+      width: 50%;
     }
   }
 

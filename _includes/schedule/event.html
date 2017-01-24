@@ -2,7 +2,9 @@
   <td class="schedule__cell schedule__cell--time">
     {{ include.time }}
   </td>
-  <td class="schedule__cell schedule__cell--event">
-    {{ include.title }}
+  <td class="schedule__cell schedule__cell--event" {% if include.fill %} colspan="3" {% endif %}>
+    <div class="schedule__title">
+      {{ include.title }}
+    </div>
   </td>
 </tr>

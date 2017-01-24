@@ -1,16 +1,41 @@
+
+{% for talk in site.data.talks %}
+  {% if talk.title == include.title %}
+    {% assign title = talk.title %}
+    {% for speaker in site.data.speakers.list %}
+      {% if speaker.id == talk.speaker_id %}
+        {% assign speaker_first_name = speaker.first_name %}
+        {% assign speaker_last_name = speaker.last_name %}
+      {% break %}
+      {% endif %}
+    {% endfor %}
+  {% break %}
+  {% endif %}
+{% endfor %}
+
+
+
+{% if include.fill %}
 <tr>
+{% endif %}
+  {% if include.time %}
   <td class="schedule__cell schedule__cell--time">
     {{ include.time }}
   </td>
-  <td class="schedule__cell schedule__cell--event">
-    {{ include.title }}
-    <div class="schedule__detail">
-      {% if include.keynote %}
-        Keynote by
-      {% endif %}
-      <span class="schedule__speaker">
-        {{ include.speaker }}
-      </span>
+  {% endif %}
+  <td class="schedule__cell schedule__cell--event" {% if include.fill %} colspan="3" {% endif %}>
+    <div class="schedule__title">
+      {{ title }}
+      <div class="schedule__detail">
+        {% if include.keynote %}
+          Keynote by
+        {% endif %}
+        <span class="schedule__speaker">
+          {{ speaker_first_name }} {{ speaker_last_name }}
+        </span>
+      </div>
     </div>
   </td>
+{% if include.fill %}
 </tr>
+{% endif %}
