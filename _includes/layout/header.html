@@ -15,21 +15,29 @@
         </a>
 
         <div class="header__menu-desktop">
-          <!-- <a href="#" class="button">
-            Speakers
-          </a> -->
+          <a href="/talks.html" class="button">
+            Talks
+          </a>
           <a href="/schedule.html" class="button">
             Schedule
           </a>
           <a href="/#venue" class="button">
             Venue
           </a>
-          <a href="/sponsor.html" class="button">
+          <a href="/sponsor.html" class="button button--no-tablet-small">
             Sponsors
           </a>
-          <a href="{{ site.data.tickets.url }}" target="_blank" class="button button--register">
-            Register
-          </a>
+
+          {% if site.data.tickets.sold_out %}
+            <div class="button button--sold-out">
+              sold out
+            </div>
+          {% else %}
+            <a href="{{ site.data.tickets.url }}" target="_blank" class="button button--register">
+              Register
+            </a>
+          {% endif %}
+
         </div>
       </nav>
     </div>

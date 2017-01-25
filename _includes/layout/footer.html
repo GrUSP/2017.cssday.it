@@ -29,7 +29,13 @@
                 <a href="/schedule.html" class="button button--footer button--left">Schedule</a>
               </div>
               <div class="footer__nav-item">
-                <a href="/tickets.html" class="button button--footer button--left">Buy a tickets</a>
+                {% if site.data.tickets.sold_out %}
+                  <div class="button button--left button--footer button--sold-out">
+                    Tickets sold out
+                  </div>
+                {% else %}
+                  <a href="/tickets.html" class="button button--footer button--left">Tickets</a>
+                {% endif %}
               </div>
               <div class="footer__nav-item">
                 <a href="/sponsor.html" class="button button--footer button--left">Sponsor</a>
