@@ -6,8 +6,6 @@ $(function () {
     $('.schedule tbody td:first-child').each(function(){
       var dates = $(this).closest('.schedule').data('dates').split(',');
 
-      console.log(dates);
-
       var enable = false;
       for (var i = 0; i < dates.length; i++) {
         if (dates[i] === today) {
@@ -15,16 +13,14 @@ $(function () {
         }
       }
 
-
       if (enable) {
-        var now = moment().format('H.mm');
-        var from = $.trim($(this).find('.schedule__time').text().split('-')[0]);
-        var to = $.trim($(this).find('.schedule__time').text().split('-')[1]);
+        var now = parseInt(moment().format('Hmm'));
+        var from = parseInt($.trim($(this).find('.schedule__time').text().split('-')[0]).replace('.', ''));
+        var to = parseInt($.trim($(this).find('.schedule__time').text().split('-')[1]).replace('.', ''));
 
         $(this).closest('tr').removeClass('schedule__current');
-        console.log(now, from, to);
+
         if (now >= from && now < to) {
-          console.log(enable);
           $(this).closest('tr').addClass('schedule__current');
         }
       }
