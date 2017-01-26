@@ -4,11 +4,13 @@
   @include element ('title') {
     @include title-uppercase;
     color: $color-text-info;
-    font-size: 60px;
+    font-size: 80px;
     line-height: 1;
+    margin: auto;
     margin-bottom: -25px;
-    margin-top: s(10);
+    margin-top: s(-9);
     text-align: center;
+    z-index: -1;
 
     @include media ('>=mobile-large') {
       font-size: 140px;
@@ -22,13 +24,16 @@
 
     @include media ('>=tablet-large') {
       font-size: 310px;
-      margin-top: s(-10);
+      margin-top: s(0);
+      position: fixed;
+      top: s(10);
+      user-select: none;
     }
   }
 
   @include element ('date') {
     @include where-when;
-    font-size: 18px;
+    font-size: 30px;
     margin-bottom: 0;
     margin-top: s(1);
     text-align: center;
@@ -46,6 +51,13 @@
       margin-bottom: s(4);
       margin-left: s(8);
       margin-top: s(-12);
+    }
+
+    @include media ('>=tablet-large') {
+      font-size: 64px;
+      margin-bottom: s(4);
+      margin-left: s(8);
+      margin-top: s(17.5);
     }
   }
 }

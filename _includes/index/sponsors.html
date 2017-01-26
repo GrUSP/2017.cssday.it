@@ -20,7 +20,7 @@
           {% for sponsor in site.data.sponsors.main.list %}
             <div class="sponsors__main-column">
               <a href="{{ sponsor.url }}" class="sponsors__link">
-                <div style="background-image:url('/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
+                <div style="background-image:url('{{ site.baseurl }}/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
               </a>
             </div>
           {% endfor %}
@@ -37,7 +37,7 @@
           {% for sponsor in site.data.sponsors.diamond.list %}
             <div class="sponsors__diamond-column">
               <a href="{{ sponsor.url }}" class="sponsors__link">
-                <div style="background-image:url('/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
+                <div style="background-image:url('{{ site.baseurl }}/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
               </a>
             </div>
           {% endfor %}
@@ -54,7 +54,7 @@
           {% for sponsor in site.data.sponsors.platinum.list %}
             <div class="sponsors__platinum-column">
               <a href="{{ sponsor.url }}" class="sponsors__link">
-                <div style="background-image:url('/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
+                <div style="background-image:url('{{ site.baseurl }}/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
               </a>
             </div>
           {% endfor %}
@@ -71,7 +71,7 @@
           {% for sponsor in site.data.sponsors.gold.list %}
             <div class="sponsors__gold-column">
               <a href="{{ sponsor.url }}" class="sponsors__link">
-                <div style="background-image:url('/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
+                <div style="background-image:url('{{ site.baseurl }}/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
               </a>
             </div>
           {% endfor %}
@@ -88,7 +88,7 @@
           {% for sponsor in site.data.sponsors.silver.list %}
             <div class="sponsors__silver-column">
               <a href="{{ sponsor.url }}" class="sponsors__link">
-                <div style="background-image:url('/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
+                <div style="background-image:url('{{ site.baseurl }}/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
               </a>
             </div>
           {% endfor %}
@@ -105,7 +105,7 @@
           {% for sponsor in site.data.sponsors.bronze.list %}
             <div class="sponsors__bronze-column">
               <a href="{{ sponsor.url }}" class="sponsors__link">
-                <div style="background-image:url('/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
+                <div style="background-image:url('{{ site.baseurl }}/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
               </a>
             </div>
           {% endfor %}
@@ -122,7 +122,7 @@
           {% for partner in site.data.partners.list %}
             <div class="sponsors__partner-column">
               <a href="{{ partner.url }}" class="sponsors__link">
-                <div style="background-image:url('/img/sponsors/{{ partner.image }}');" class="sponsors__image"></div>
+                <div style="background-image:url('{{ site.baseurl }}/img/sponsors/{{ partner.image }}');" class="sponsors__image"></div>
               </a>
             </div>
           {% endfor %}
@@ -138,7 +138,7 @@
       <div class="sponsors__became">
         Became a Sponsor!
       </div>
-      <a href="/img/sponsors/{{ site.data.sponsors.pdf }}" target="_blank" class="button button--left">Download PDF</a>
+      <a href="{{ site.baseurl }}/img/sponsors/{{ site.data.sponsors.pdf }}" target="_blank" class="button button--left">Download PDF</a>
     </div>
   {% endif %}
 

@@ -1,8 +1,8 @@
 <header class="header">
   <div class="limit">
     <div class="header__row">
-      <a href="/" class="header__logo">
-        <img class="header__logo-image" src="/img/themes/{{ site.data.conference.slug }}/{{ site.data.conference.slug }}-logo.svg">
+      <a href="{{ site.baseurl }}/" class="header__logo">
+        <img class="header__logo-image" src="{{ site.baseurl }}/img/themes/{{ site.data.conference.slug }}/{{ site.data.conference.slug }}-logo.svg">
       </a>
       <h1 class="header__conf-name">
         {{ site.data.conference.name }} {{ site.data.conference.year }}
@@ -15,16 +15,16 @@
         </a>
 
         <div class="header__menu-desktop">
-          <a href="/talks.html" class="button">
+          <a href="{{ site.baseurl }}/talks.html" class="button">
             Talks
           </a>
-          <a href="/schedule.html" class="button">
+          <a href="{{ site.baseurl }}/schedule.html" class="button">
             Schedule
           </a>
-          <a href="/#venue" class="button">
+          <a href="{{ site.baseurl }}/#venue" class="button">
             Venue
           </a>
-          <a href="/sponsor.html" class="button button--no-tablet-small">
+          <a href="{{ site.baseurl }}/sponsor.html" class="button button--no-tablet-small">
             Sponsors
           </a>
 

@@ -5,18 +5,19 @@
   </div>
 </div>
 
+
 <div class="limit">
   <div class="speakers">
     {% for speaker in site.data.speakers.list %}
       <div class="speakers__column">
         <div class="speaker">
-          <div class="speaker__pic" style="background-image:url('/img/{{ site.data.conference.slug }}/speaker/{{ speaker.image }}');"></div>
+          <div class="speaker__pic" style="background-image:url('{{ site.baseurl }}/img/{{ site.data.conference.slug }}/speaker/{{ speaker.image }}');"></div>
           <div class="speaker__full-name">
             <div class="speaker__name">
-              {{ speaker.name }}
+              {{ speaker.first_name }}
             </div>
             <div class="speaker__name">
-              {{ speaker.surname }}
+              {{ speaker.last_name }}
             </div>
           </div>
           <div class="speaker__description">

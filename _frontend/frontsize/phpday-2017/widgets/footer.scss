@@ -6,6 +6,7 @@
   clear: both;
   color: $color-text-footer;
   overflow: hidden;
+  position: relative;
 
   @include media ('>=tablet-large') {
     padding-bottom: s(6);

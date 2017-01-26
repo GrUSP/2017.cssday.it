@@ -26,7 +26,7 @@
           <div class="footer__row-column">
             <div class="footer__nav">
               <div class="footer__nav-item">
-                <a href="/schedule.html" class="button button--footer button--left">Schedule</a>
+                <a href="{{ site.baseurl }}/schedule.html" class="button button--footer button--left">Schedule</a>
               </div>
               <div class="footer__nav-item">
                 {% if site.data.tickets.sold_out %}
@@ -34,24 +34,24 @@
                     Tickets sold out
                   </div>
                 {% else %}
-                  <a href="/tickets.html" class="button button--footer button--left">Tickets</a>
+                  <a href="{{ site.baseurl }}/tickets.html" class="button button--footer button--left">Tickets</a>
                 {% endif %}
               </div>
               <div class="footer__nav-item">
-                <a href="/sponsor.html" class="button button--footer button--left">Sponsor</a>
+                <a href="{{ site.baseurl }}/sponsor.html" class="button button--footer button--left">Sponsor</a>
               </div>
               <div class="footer__nav-item">
-                <a href="#" class="button button--footer button--left">Talks</a>
+                <a href="{{ site.baseurl }}/talks.html" class="button button--footer button--left">Talks</a>
               </div>
             </div>
           </div>
           <div class="footer__row-column">
             <div class="footer__nav">
               <div class="footer__nav-item">
-                <a href="#newsletter" class="button button--footer button--left">Newsletter</a>
+                <a href="{{ site.baseurl }}/#newsletter" class="button button--footer button--left">Newsletter</a>
               </div>
               <div class="footer__nav-item">
-                <a href="#venue" class="button button--footer button--left">Venue</a>
+                <a href="{{ site.baseurl }}/#venue" class="button button--footer button--left">Venue</a>
               </div>
               <div class="footer__nav-item">
                 <a href="http://www.jsday.it" class="button button--footer button--left">JSday</a>
@@ -82,7 +82,7 @@
       </div>
       <div class="footer__row-column">
         <a class="footer__grusp-logo" href="http://grusp.org">
-          <img src="/img/themes/{{ site.data.conference.slug }}/grusp-logo.svg" alt="">
+          <img src="{{ site.baseurl }}/img/themes/{{ site.data.conference.slug }}/grusp-logo.svg" alt="">
         </a>
         <div class="footer__grusp-footer">
           <p>
@@ -92,7 +92,7 @@
             Contact us to <a href="mailto:info@grusp.org">info@grusp.org</a>
           </p>
           <p>
-            You can read our <a href="#">privacy policy</a> and our <a href="/coc.html">code of conduct</a>
+            You can read our <a href="{{ site.baseurl }}/privacy-policy.html">privacy policy</a> and our <a href="{{ site.baseurl }}/coc.html">code of conduct</a>
           </p>
         </div>
       </div>

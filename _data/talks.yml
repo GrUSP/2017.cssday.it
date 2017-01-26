@@ -1,6 +1,7 @@
 -
   speaker_id: rasmus-lerdorf
   title: Deploying PHP 7
+  keynote: true
   extract: >
     This talk is intermediate level and should have a bit of something
     for everyone whether you’re building a standard pipeline (non-docker)
@@ -11,6 +12,7 @@
   speaker_id:
     - nicolas-cage
     - rasmus-lerdorf
+  image: talk-image.jpg
   title: Your API is a UI
   extract: >
     This talk is intermediate level and should have a bit of something
