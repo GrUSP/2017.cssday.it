@@ -1,43 +1,24 @@
 
-$font-family-monospace: menlo, monaco, 'courier new', monospace;
-$font-family-sans: 'proxima-nova', helvetica, arial, sans-serif;
-$font-family-serif: georgia, 'times new roman', times, serif;
-
-$color-facebook: #3b5998;
-$color-flickr: #0063dc;
-$color-gplus: #dd4b39;
-$color-twitter: #1da1f2;
-$color-vimeo: #162221;
-$color-youtube: #cd201f;
-
-$color-atlantis: rgb(141, 198, 63);
-$color-black: rgb(0, 0, 0);
-$color-carnation: rgb(244, 86, 86);
-$color-jordy-blue: rgb(139, 171, 234);
-$color-link-water: rgb(220, 230, 249);
-$color-mine-shaft: rgb(45, 45, 45);
-$color-white: rgb(255, 255, 255);
-$color-wild-sand: rgb(245, 245, 245);
-$color-lochmara: rgb(0, 146, 219);
-
 $color-background-action: $color-carnation;
 $color-background-dark: $color-mine-shaft;
 $color-background-info: $color-atlantis;
 $color-background: $color-white;
 $color-background-grusp: $color-black;
 
-$color-background-schedule-current: mix($color-jordy-blue, $color-white, 25%);
+$color-background-schedule-current: mix($color-atlantis, $color-white, 25%);
 $color-background-schedule-on-air: $color-carnation;
 $color-text-schedule-on-air: $color-white;
 
 $color-background-sponsor: $color-wild-sand;
-$color-background-sponsor-alt: $color-link-water;
+$color-background-sponsor-alt: $color-frost;
 $color-background-sponsor-hover: rgba($color-mine-shaft, 0.05);
 
 $color-menu-button-alt: $color-carnation;
 $color-menu-button: $color-white;
 $color-menu-left: rgba($color-atlantis, 0.975);
 $color-menu-right: rgba($color-mine-shaft, 0.975);
+
+$color-button-sold-out: $color-mine-shaft;
 
 $color-text-action: $color-white;
 $color-text-footer: $color-white;
@@ -49,10 +30,13 @@ $color-text-schedule-header: $color-white;
 $color-text-schedule-speaker: $color-carnation;
 $color-text-speaker-name-alt: $color-lochmara;
 $color-text-speaker-name: $color-white;
-$color-text-sponsorship-option-infos: $color-atlantis;
-$color-text-sponsorship-option-plus: $color-jordy-blue;
+$color-text-sponsorship-option-infos: $color-jordy-blue;
+$color-text-sponsorship-option-plus: $color-atlantis;
 $color-text-sponsorship-option-text: $color-white;
 $color-text-sponsorship-option-title: $color-carnation;
+
+$color-text-talk-title: $color-white;
+$color-background-talk-title: $color-jordy-blue;
 
 $color-text-submit: $color-carnation;
 $color-text: $color-mine-shaft;
@@ -66,4 +50,4 @@ $font-family-text: $font-family-sans;
 $font-family-title: $font-family-serif;
 
 $box-shadow-outline: 0 0 0 1px rgba(0, 0, 0, 0.05);
-$color-hr: $color-atlantis;
+$color-hr: $color-carnation;
