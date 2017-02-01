@@ -1,5 +1,5 @@
 ---
-config: dustman.yml
+config: dustman-phpday.yml
 
 css:
   file: frontsize.min.css
@@ -32,7 +32,7 @@ css:
       - _frontend/frontsize/grusp/fontello/css/grusp-codes.css
   watch: _frontend/frontsize/**/*.scss
 
-js: dustman.yml
+js: dustman-phpday.yml
 
 shell:
   after:
