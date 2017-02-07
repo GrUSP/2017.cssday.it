@@ -1,0 +1,45 @@
+<header class="header">
+  <div class="limit">
+    <div class="header__row">
+      <a href="{{ site.baseurl }}/" class="header__logo">
+        <img class="header__logo-image" src="{{ site.baseurl }}/img/themes/{{ site.data.conference.slug }}/{{ site.data.conference.slug }}-logo.svg">
+      </a>
+      <!--h1 class="header__conf-name">
+        {{ site.data.conference.name }} {{ site.data.conference.year }}
+      </h1-->
+      <nav class="header__menu">
+        <a href="#" id="open-menu" class="button button--menu">
+          <i class="icon-minus"></i>
+          <i class="icon-minus"></i>
+          <i class="icon-minus"></i>
+        </a>
+
+        <div class="header__menu-desktop">
+          <a href="{{ site.baseurl }}/talks.html" class="button">
+            Talks
+          </a>
+          <a href="{{ site.baseurl }}/schedule.html" class="button">
+            Schedule
+          </a>
+          <a href="{{ site.baseurl }}/#venue" class="button">
+            Venue
+          </a>
+          <!--a href="{{ site.baseurl }}/sponsor.html" class="button button--no-tablet-small">
+            Sponsors
+          </a-->
+
+          {% if site.data.tickets.sold_out %}
+            <div class="button button--sold-out">
+              sold out
+            </div>
+          {% else %}
+            <a href="{{ site.data.tickets.url }}" target="_blank" class="button button--register">
+              Register
+            </a>
+          {% endif %}
+
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,68 @@
+# place images in:
+# img/conf-name/speaker/file.jpg
+call_for_paper_url: https://goo.gl/forms/NpVU3q7xmcSaspsJ2
+call_for_paper: false
+list:
+  -
+    id: Massimo-Artizzu
+    description: 
+    image: artizzu.jpg
+    first_name: Massimo
+    last_name: 	Artizzu
+    twitter: MaxArt2501
+  -
+    id: Carla-Soloperto
+    description: 
+    image: carla-soloperto.jpg
+    first_name: Carla
+    last_name: Soloperto
+    twitter: uochimiluochi
+  -
+    id: Andrea-DeCarolis
+    description: 
+    image: decarola.jpg
+    first_name: Andrea	
+    last_name: De Carolis
+    twitter: decarola
+  -
+    id: Mattia-Tommasone
+    description: 
+    image: raibaz.jpg
+    first_name: Mattia	
+    last_name: Tommasone
+    twitter: raibaz
+  -
+    id: violo
+    description: 
+    image: violo.jpg
+    first_name: Alessandro
+    last_name: Violini
+    twitter: violo
+  -
+    id: Lorena-Ramonda
+    description: 
+    image: lorena.jpg
+    first_name: Lorena	
+    last_name: Ramonda
+    twitter: mobiledesignah
+  -
+    id: Carmine-Alfano
+    description: 
+    image: alfano.jpg
+    first_name: Carmine	
+    last_name: Alfano
+    twitter: razzullo
+  -
+    id: Andrea-Verlicchi 
+    description: 
+    image: verlok.jpg
+    first_name: Andrea	 
+    last_name: Verlicchi
+    twitter: verlok
+  -
+    id: davide-dipumpo
+    description: 
+    image: davide-dipumpo.jpg
+    first_name: Davide
+    last_name: Di Pumpo
+    twitter: makhbeth

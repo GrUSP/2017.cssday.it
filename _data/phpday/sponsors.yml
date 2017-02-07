@@ -1,0 +1,131 @@
+# place images in:
+# img/sponsors/file.jpg
+# img/sponsors/guide.pdf
+
+pdf: sponsor_adespresso.png
+call_for_sponsor: true
+
+main:
+  price: € 10,000
+  offer:
+    - 1 dedicated session (30 mins max)
+    - Access to opt-in attendees list
+    - One direct email marketing campaign
+    - Your logo on conference programme
+    - Your logo on conference rollups
+    - Your own rollups in two rooms
+    - Stand (table 2m x 1m)
+    - Your own flyer and/or gadget in folder
+    - 5 free tickets
+    - 5 tickets with 50% discount
+  max: 1
+  list:
+    -
+      url: http://adespresso.com
+      image: sponsor_adespresso.png
+
+diamond:
+  price: € 5,000
+  offer:
+    - Access to opt-in attendees list
+    - One direct email marketing campaign
+    - Your logo on conference programme
+    - Your logo on conference rollups
+    - Your own rollups in two rooms
+    - Stand (table 2m x 1m)
+    - Your own flyer and/or gadget in folder
+    - 5 free tickets
+    - 5 tickets with 50% discount
+  max: 2
+  list:
+    -
+      url: http://adespresso.com
+      image: sponsor_adespresso.png
+
+
+platinum:
+  price: € 3,000
+  offer:
+    - 1 dedicated session (30 mins max)
+    - Access to opt-in attendees list
+    - One direct email marketing campaign
+    - Your logo on conference programme
+    - Your logo on conference rollups
+    - Your own rollups in two rooms
+    - Stand (table 2m x 1m)
+    - 5 tickets with 50% discount
+  max: 4
+  list:
+    -
+      url: http://adespresso.com
+      image: sponsor_inode.png
+    -
+      url: http://i3p.com
+      image: fabbrucci.png
+
+gold:
+  price: € 1,000
+  offer:
+    - 1 dedicated session (30 mins max)
+    - Access to opt-in attendees list
+    - One direct email marketing campaign
+    - Your logo on conference programme
+    - Your logo on conference rollups
+    - 5 tickets with 50% discount
+  max: 8
+  list:
+    -
+      url: http://adespresso.com
+      image: sponsor_inode.png
+    -
+      url: http://i3p.com
+      image: fabbrucci.png
+    -
+      url: http://adespresso.com
+      image: faventia.jpg
+
+silver:
+  price: € 500
+  offer:
+    - 1 dedicated session (30 mins max)
+    - Access to opt-in attendees list
+    - One direct email marketing campaign
+    - Your logo on conference programme
+    - 5 tickets with 50% discount
+  max: 4
+  list:
+    -
+      url: http://adespresso.com
+      image: sponsor_inode.png
+    -
+      url: http://i3p.com
+      image: fabbrucci.png
+    -
+      url: http://adespresso.com
+      image: faventia.jpg
+    -
+      url: http://i3p.com
+      image: sponsor_3.jpg
+
+bronze:
+  price: € 300
+  offer:
+    - Your logo on conference programme
+    - 2 tickets with 50% discount
+  max: 8
+  list:
+    -
+      url: http://adespresso.com
+      image: sponsor_inode.png
+    -
+      url: http://i3p.com
+      image: fabbrucci.png
+    -
+      url: http://adespresso.com
+      image: faventia.jpg
+    -
+      url: http://i3p.com
+      image: sponsor_3.jpg
+    -
+      url: http://adespresso.com
+      image: sponsor_inode.png

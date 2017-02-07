@@ -1,0 +1,25 @@
+list:
+  -
+    url: http://adespresso.com
+    image: sponsor_inode.png
+  -
+    url: http://i3p.com
+    image: fabbrucci.png
+  -
+    url: http://adespresso.com
+    image: faventia.jpg
+  -
+    url: http://i3p.com
+    image: sponsor_3.jpg
+  -
+    url: http://adespresso.com
+    image: sponsor_inode.png
+  -
+    url: http://i3p.com
+    image: fabbrucci.png
+  -
+    url: http://adespresso.com
+    image: faventia.jpg
+  -
+    url: http://i3p.com
+    image: sponsor_3.jpg

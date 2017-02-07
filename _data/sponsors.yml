@@ -1,0 +1,95 @@
+# place images in:
+# img/sponsors/file.jpg
+# img/sponsors/guide.pdf
+
+pdf: 
+call_for_sponsor: true
+
+main:
+  price: € 10,000
+  offer:
+    - 1 dedicated session (30 mins max)
+    - Access to opt-in attendees list
+    - One direct email marketing campaign
+    - Your logo on conference programme
+    - Your logo on conference rollups
+    - Your own rollups in two rooms
+    - Stand (table 2m x 1m)
+    - Your own flyer and/or gadget in folder
+    - 5 free tickets
+    - 5 tickets with 50% discount
+  max: 1
+  list:
+    -
+      url: http://www.ideato.it?utm_source=cssday2017
+      image: ideato.png
+
+diamond:
+  price: € 5,000
+  offer:
+    - Access to opt-in attendees list
+    - One direct email marketing campaign
+    - Your logo on conference programme
+    - Your logo on conference rollups
+    - Your own rollups in two rooms
+    - Stand (table 2m x 1m)
+    - Your own flyer and/or gadget in folder
+    - 5 free tickets
+    - 5 tickets with 50% discount
+  max: 0
+
+
+platinum:
+  price: € 3,000
+  offer:
+    - 1 dedicated session (30 mins max)
+    - Access to opt-in attendees list
+    - One direct email marketing campaign
+    - Your logo on conference programme
+    - Your logo on conference rollups
+    - Your own rollups in two rooms
+    - Stand (table 2m x 1m)
+    - 5 tickets with 50% discount
+  max: 0
+  list:
+
+gold:
+  price: € 1,000
+  offer:
+    - 1 dedicated session (30 mins max)
+    - Access to opt-in attendees list
+    - One direct email marketing campaign
+    - Your logo on conference programme
+    - Your logo on conference rollups
+    - 5 tickets with 50% discount
+  max: 0
+  list:
+
+silver:
+  price: € 500
+  offer:
+    - 1 dedicated session (30 mins max)
+    - Access to opt-in attendees list
+    - One direct email marketing campaign
+    - Your logo on conference programme
+    - 5 tickets with 50% discount
+  max: 0
+  list:
+    -
+      url: https://www.bitbull.it?utm_source=cssday2017
+      image: bitbull.svg
+
+
+bronze:
+  price: € 300
+  offer:
+    - Your logo on conference programme
+    - 2 tickets with 50% discount
+  max: 8
+  list:
+    -
+      url: http://antreem.com?utm_source=cssday2017
+      image: antreem.svg
+    - 
+      url: 
+      image: mfm.svg

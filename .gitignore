@@ -1,3 +1,9 @@
+_frontend/build
+_frontend/temp
 _site/
-.sass-cache/
+.DS_Store
 .jekyll-metadata
+.sass-cache/
+*.log
+gulpfile.js
+node_modules
