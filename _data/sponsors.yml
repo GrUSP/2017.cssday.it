@@ -22,7 +22,7 @@ main:
   list:
     -
       url: http://www.ideato.it?utm_source=cssday2017
-      image: ideato.png
+      image: ideato.svg
 
 diamond:
   price: € 5,000
