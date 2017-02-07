@@ -118,15 +118,7 @@
         <div class="sponsors__title-right">
           Media partners
         </div>
-        <div class="sponsors__partner" id="media-partners">
-          {% for partner in site.data.partners.list %}
-            <div class="sponsors__partner-column">
-              <a href="{{ partner.url }}" class="sponsors__link">
-                <div style="background-image:url('{{ site.baseurl }}/img/sponsors/{{ partner.image }}');" class="sponsors__image"></div>
-              </a>
-            </div>
-          {% endfor %}
-        </div>
+        <div class="sponsors__partner" id="media-partners" data-tags="css frontend"></div>
       </div>
       {% endif %}
 
