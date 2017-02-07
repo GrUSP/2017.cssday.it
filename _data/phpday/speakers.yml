@@ -1,0 +1,139 @@
+# place images in:
+# img/conf-name/speaker/file.jpg
+call_for_paper_url: https://goo.gl/forms/NpVU3q7xmcSaspsJ2
+call_for_paper: true
+list:
+  -
+    id: rasmus-lerdorf
+    description: Rasmus Lerdorf bio
+    image: nicolas-cage.jpg
+    first_name: Rasmus
+    last_name: Lerdorf
+    twitter: rasmuslerdorf
+  -
+    id: nicolas-cage
+    description: Just another developer
+    image: nicolas-cage.jpg
+    first_name: Nicolas
+    last_name: Cage
+    twitter: nicolascage_
+  -
+    description: Just another developer
+    image: nicolas-cage.jpg
+    first_name: Nicolas
+    last_name: Cage
+    twitter: nicolascage_
+  -
+    description: Just another developer
+    image: nicolas-cage.jpg
+    first_name: Nicolas
+    last_name: Cage
+    twitter: nicolascage_
+  -
+    description: Just another developer
+    image: nicolas-cage.jpg
+    first_name: Nicolas
+    last_name: Cage
+    twitter: nicolascage_
+  -
+    description: Just another developer
+    image: nicolas-cage.jpg
+    first_name: Nicolas
+    last_name: Cage
+    twitter: nicolascage_
+  -
+    description: Just another developer
+    image: nicolas-cage.jpg
+    first_name: Nicolas
+    last_name: Cage
+    twitter: nicolascage_
+  -
+    description: Just another developer
+    image: nicolas-cage.jpg
+    first_name: Nicolas
+    last_name: Cage
+    twitter: nicolascage_
+  -
+    description: Just another developer
+    image: nicolas-cage.jpg
+    first_name: Nicolas
+    last_name: Cage
+    twitter: nicolascage_
+  -
+    description: Just another developer
+    image: nicolas-cage.jpg
+    first_name: Nicolas
+    last_name: Cage
+    twitter: nicolascage_
+  -
+    description: Just another developer
+    image: nicolas-cage.jpg
+    first_name: Nicolas
+    last_name: Cage
+    twitter: nicolascage_
+  -
+    description: Just another developer
+    image: nicolas-cage.jpg
+    first_name: Nicolas
+    last_name: Cage
+    twitter: nicolascage_
+  -
+    description: Just another developer
+    image: nicolas-cage.jpg
+    first_name: Nicolas
+    last_name: Cage
+    twitter: nicolascage_
+  -
+    description: Just another developer
+    image: nicolas-cage.jpg
+    first_name: Nicolas
+    last_name: Cage
+    twitter: nicolascage_
+  -
+    description: Just another developer
+    image: nicolas-cage.jpg
+    first_name: Nicolas
+    last_name: Cage
+    twitter: nicolascage_
+  -
+    description: Just another developer
+    image: nicolas-cage.jpg
+    first_name: Nicolas
+    last_name: Cage
+    twitter: nicolascage_
+  -
+    description: Just another developer
+    image: nicolas-cage.jpg
+    first_name: Nicolas
+    last_name: Cage
+    twitter: nicolascage_
+  -
+    description: Just another developer
+    image: nicolas-cage.jpg
+    first_name: Nicolas
+    last_name: Cage
+    twitter: nicolascage_
+  -
+    description: Just another developer
+    image: nicolas-cage.jpg
+    first_name: Nicolas
+    last_name: Cage
+    twitter: nicolascage_
+  -
+    description: Just another developer
+    image: nicolas-cage.jpg
+    first_name: Nicolas
+    last_name: Cage
+    twitter: nicolascage_
+  -
+    description: Just another developer
+    image: nicolas-cage.jpg
+    first_name: Nicolas
+    last_name: Cage
+    twitter: nicolascage_
+  -
+    description: Just another developer
+    image: nicolas-cage.jpg
+    first_name: Nicolas
+    last_name: Cage
+    twitter: nicolascage_

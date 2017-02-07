@@ -28,13 +28,13 @@
       </div>
       {% endif %}
 
-      {% if site.data.sponsors.diamond %}
+      {% if site.data.sponsors.diamond.list | size  %}
       <div class="sponsors__category">
         <div class="sponsors__title">
           diamond
         </div>
         <div class="sponsors__diamond">
-          {% for sponsor in site.data.sponsors.diamond.list %}
+          {% for sponsor in site.data.sponsors.diamond.list  %}
             <div class="sponsors__diamond-column">
               <a href="{{ sponsor.url }}" class="sponsors__link">
                 <div style="background-image:url('{{ site.baseurl }}/img/sponsors/{{ sponsor.image }}');" class="sponsors__image"></div>
@@ -45,7 +45,7 @@
       </div>
       {% endif %}
 
-      {% if site.data.sponsors.platinum %}
+      {% if site.data.sponsors.platinum.list | size %}
       <div class="sponsors__category">
         <div class="sponsors__title">
           platinum
@@ -62,7 +62,7 @@
       </div>
       {% endif %}
 
-      {% if site.data.sponsors.gold %}
+      {% if site.data.sponsors.gold.list | size %}
       <div class="sponsors__category">
         <div class="sponsors__title">
           gold
@@ -79,7 +79,7 @@
       </div>
       {% endif %}
 
-      {% if site.data.sponsors.silver %}
+      {% if site.data.sponsors.silver.list | size %}
       <div class="sponsors__category">
         <div class="sponsors__title">
           silver
@@ -96,7 +96,7 @@
       </div>
       {% endif %}
 
-      {% if site.data.sponsors.bronze %}
+      {% if site.data.sponsors.bronze.list | size %}
       <div class="sponsors__category">
         <div class="sponsors__title">
           bronze
@@ -118,7 +118,7 @@
         <div class="sponsors__title-right">
           Media partners
         </div>
-        <div class="sponsors__partner">
+        <div class="sponsors__partner" id="media-partners">
           {% for partner in site.data.partners.list %}
             <div class="sponsors__partner-column">
               <a href="{{ partner.url }}" class="sponsors__link">
@@ -138,7 +138,11 @@
       <div class="sponsors__became">
         Became a Sponsor!
       </div>
-      <a href="{{ site.baseurl }}/img/sponsors/{{ site.data.sponsors.pdf }}" target="_blank" class="button button--left">Download PDF</a>
+        {% if site.data.sponsors.pdf %}
+            <a href="{{ site.baseurl }}/img/sponsors/{{ site.data.sponsors.pdf }}" target="_blank" class="button button--left">Download PDF</a>
+        {% else if %}
+            <a href="mailto:info@grusp.org?subject=vorrei sponsorizzare {{ site.data.conference.name }}" target="_blank" class="button button--left">Inviaci una email</a>
+        {% endif %}
     </div>
   {% endif %}
 

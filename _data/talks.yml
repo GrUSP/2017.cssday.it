@@ -1,22 +1,46 @@
 -
-  speaker_id: rasmus-lerdorf
-  title: Deploying PHP 7
-  keynote: true
+  speaker_id: Massimo-Artizzu
+  title: Griglie CSS - il futuro prossimo del layout
+  keynote: false
   extract: >
-    This talk is intermediate level and should have a bit of something
-    for everyone whether you’re building a standard pipeline (non-docker)
-    or already have a pipeline and looking to see how docker will make it even stronger.
-    I will demonstrate how building pipe- lines with Docker differs from
-    traditional pipelines, what steps are involved in migrating.
+    Siamo partiti dalle tabelle. Abbiamo arrancato coi float. Stiamo respirando con flexbox. Ma per i nostri layout in CSS alle porte ci sono le griglie, abilitate di default in Chrome e Firefox da marzo 2017. Vedremo cosa ci riserva uno dei moduli CSS più sofisticati e flessibili di sempre, che promette di risolvere tutti i (o buona parte dei) nostri problemi di layout. Partendo da una panoramica generale delle funzionalità, vedremo qualche esempio, come affrontare il problema del fallback e del supporto a vecchie specifiche (IE, Edge), e gli strumenti per uno sviluppo semplice.
 -
-  speaker_id:
-    - nicolas-cage
-    - rasmus-lerdorf
-  image: talk-image.jpg
-  title: Your API is a UI
+  speaker_id: Carla-Soloperto
+  title: "CSS Scalabile: Sfide e ricompense di un percorso in salita"
   extract: >
-    This talk is intermediate level and should have a bit of something
-    for everyone whether you’re building a standard pipeline (non-docker)
-    or already have a pipeline and looking to see how docker will make it even stronger.
-    I will demonstrate how building pipe- lines with Docker differs from
-    traditional pipelines, what steps are involved in migrating.
+    In questo talk parleremo di alcuni strumenti e pratiche che possiamo utilizzare nel lavoro quotidiano per scrivere codice di qualità, nonché della nostra responsabilità nel renderlo comprensibile, scalabile e manutenibile nel tempo. 
+-
+  speaker_id: Andrea-DeCarolis
+  title: Le performance come esperienza religiosa
+  extract: >
+    Realizzare un sito con delle buone performance è un po' come partecipare ad un torneo di tennis: devi vincere una serie di sfide con avversari più o meno antipatici, più o meno giovani, più o meno ostici. Per battere questi avversari devi analizzarli a fondo, pianificare una strategia, essere sicuro della tua tecnica di gioco, ottimizzare le risorse che hai a disposizione e infine prepararti a sopportare un po’ di pressione psicologica. Un sito con buone performance è molto simile: analizzi lo scenario sul quale vai a lavorare, elenchi le caratteristiche tecniche sulle quali puoi fare affidamento, ottimizzi le risorse che hai a disposizione, ti prepari per un sano confronto psicologico con il designer di turno. Decarola ti accompagnerà alla scoperta delle analogie tra teoria del buon tennis e pratica dello sviluppo web: allenamenti intensi, scenari dove ogni millisecondo fa la differenza e obiettivi a breve termine che ti avvicinano alla vittoria finale. Il risultato? Il tuo prossimo progetto si caricherà più velocemente di un servizio di Roger Federer.
+-
+  speaker_id: Mattia-Tommasone
+  title: Refactoring CSS
+  extract: >
+    Refactoring techniques are one of the basis of the toolset of every developer in every language, but they tend to be overlooked or not taken enough into account when it comes to CSS: however, they can be extremely useful in CSS too. This talk will present some techniques to build and maintain a culture of continuous improvement in the quality of CSS code.
+-
+  speaker_id: violo
+  title: "Dalle Styleguide alle Pattern Libraries: cosa serve e quando"
+  extract: >
+    Nello scenario di team dinamici, cross professionali e di applicazioni longeve nel tempo la condivisione delle informazioni tecniche ha un ruolo chiave per la buona riuscita del progetto, per l'evoluzione dell'applicazione e per la sana gestione del debito tecnico. Facciamo chiarezza terminologica e vediamo le tecniche necessarie per un'interfaccia codificabile oggi e manutenibile domani.
+-
+  speaker_id: Lorena-Ramonda
+  title: "The multicolumn challenge: ACCEPTED!"
+  extract: >
+    Un tempo c’era un solo modo per impaginare un layout: le terrificanti tabelle. Oggi c’è CSS3 che aggiunge nuove tecniche per ottenere lo stesso risultato in modi diversi, ma quale scegliere? La risposta a questa domanda non è semplice come potrebbe sembrare. Per rispondere prendiamo il più semplice dei task, un layout multicolonna, e vediamo in quanti modi può essere realizzato. Quale tecnica di layout darà performance migliori? Quale avrà la migliore compatibilità?
+-
+  speaker_id: Carmine-Alfano
+  title: Bootstrap 4 is coming!
+  extract: >
+    Diventato ormai uno standard nello sviluppo web, tanto di essere adottato anche nelle specifiche della pubblica amministrazione, Bootstrap è lo strumento più importante da conoscere per uno sviluppatore web. In questa sessione vedremo, con un approccio molto pratico, le novità della versione 4, entrando nel dettaglio della stilizzazione grafica con SASS e analizzando la nuova gestione del grid system basato su Flexbox.
+-
+  speaker_id: Andrea-Verlicchi 
+  title: Responsive Images, uno standard HTML 5.1 standard HTML 5.1	
+  extract: >
+    Sono da poco una W3C recommendation il nuovo tag <picture> e gli attributi srcset e sizes nel tag <img>. In questo talk vedremo cosa sono, come si usano, in quali casi preferire l'uno o l'altro, ed alcune best practice di utilizzo per dare un boost ai tempi di caricamento delle vostre web app o pagine web. 
+-
+  speaker_id: davide-dipumpo
+  title: CSS, figli di un dio minore
+  extract: >
+    Diciamoci la verità, il CSS è facile e alla portata di tutti. Ma nonostante questo molti sviluppatori vedono CSS come un male necessario. Tra chi lo odia e lo evita come la peste, chi cerca di fixarlo e lo inserisce in Javascript, chi aspetta  e brama qualche tool di disegno che esporti CSS utilizzabile. Ma c'è tra di noi chi il CSS lo ama, ma se ne vergogna amaramente. Usciamo fuori dall'ombra e facciamo vedere davvero cosa vuol dire scrivere CSS nel mondo del lavoro moderno. Perché alla fine che mondo sarebbe senza colori?

@@ -2,7 +2,7 @@
 # img/sponsors/file.jpg
 # img/sponsors/guide.pdf
 
-pdf: 
+pdf: sponsor_adespresso.png
 call_for_sponsor: true
 
 main:
@@ -21,8 +21,8 @@ main:
   max: 1
   list:
     -
-      url: http://www.ideato.it?utm_source=cssday2017
-      image: ideato.png
+      url: http://adespresso.com
+      image: sponsor_adespresso.png
 
 diamond:
   price: € 5,000
@@ -36,7 +36,11 @@ diamond:
     - Your own flyer and/or gadget in folder
     - 5 free tickets
     - 5 tickets with 50% discount
-  max: 0
+  max: 2
+  list:
+    -
+      url: http://adespresso.com
+      image: sponsor_adespresso.png
 
 
 platinum:
@@ -50,8 +54,14 @@ platinum:
     - Your own rollups in two rooms
     - Stand (table 2m x 1m)
     - 5 tickets with 50% discount
-  max: 0
+  max: 4
   list:
+    -
+      url: http://adespresso.com
+      image: sponsor_inode.png
+    -
+      url: http://i3p.com
+      image: fabbrucci.png
 
 gold:
   price: € 1,000
@@ -62,8 +72,17 @@ gold:
     - Your logo on conference programme
     - Your logo on conference rollups
     - 5 tickets with 50% discount
-  max: 0
+  max: 8
   list:
+    -
+      url: http://adespresso.com
+      image: sponsor_inode.png
+    -
+      url: http://i3p.com
+      image: fabbrucci.png
+    -
+      url: http://adespresso.com
+      image: faventia.jpg
 
 silver:
   price: € 500
@@ -73,12 +92,20 @@ silver:
     - One direct email marketing campaign
     - Your logo on conference programme
     - 5 tickets with 50% discount
-  max: 0
+  max: 4
   list:
     -
-      url: https://www.bitbull.it?utm_source=cssday2017
-      image: bitbull.svg
-
+      url: http://adespresso.com
+      image: sponsor_inode.png
+    -
+      url: http://i3p.com
+      image: fabbrucci.png
+    -
+      url: http://adespresso.com
+      image: faventia.jpg
+    -
+      url: http://i3p.com
+      image: sponsor_3.jpg
 
 bronze:
   price: € 300
@@ -88,8 +115,17 @@ bronze:
   max: 8
   list:
     -
-      url: http://antreem.com?utm_source=cssday2017
-      image: antreem.svg
-    - 
-      url: 
-      image: mfm.svg
+      url: http://adespresso.com
+      image: sponsor_inode.png
+    -
+      url: http://i3p.com
+      image: fabbrucci.png
+    -
+      url: http://adespresso.com
+      image: faventia.jpg
+    -
+      url: http://i3p.com
+      image: sponsor_3.jpg
+    -
+      url: http://adespresso.com
+      image: sponsor_inode.png
