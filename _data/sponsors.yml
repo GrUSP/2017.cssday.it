@@ -52,6 +52,12 @@ platinum:
     - 5 tickets with 50% discount
   max: 0
   list:
+    - 
+      url: http://www.kerning.it
+      image: kerning.svg
+    -
+      url: http://www.jsday.it
+      image: jsday.svg
 
 gold:
   price: € 1,000
