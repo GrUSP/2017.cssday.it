@@ -5,6 +5,9 @@ $color-background-info: $color-jordy-blue;
 $color-background: $color-white;
 $color-background-grusp: $color-black;
 
+$color-text-talk-speakers-title: $color-white;
+$color-background-talk-speakers: $color-black;
+
 $color-background-schedule-current: mix($color-jordy-blue, $color-white, 25%);
 $color-background-schedule-on-air: $color-carnation;
 $color-text-schedule-on-air: $color-white;
@@ -48,6 +51,8 @@ $font-family-header: $font-family-sans;
 $font-family-speaker: $font-family-sans;
 $font-family-text: $font-family-sans;
 $font-family-title: $font-family-serif;
+
+$color-background-talk-highlight: transparent;
 
 $box-shadow-outline: 0 0 0 1px rgba(0, 0, 0, 0.05);
 $color-hr: $color-carnation;

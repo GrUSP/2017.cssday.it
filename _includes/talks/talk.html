@@ -1,6 +1,5 @@
 {% assign speaker_id = include.talk.speaker_id %}
-<a name="{{speaker_id}}"></a>
-<article class="talk">      
+<article id="{{speaker_id}}" class="talk">      
   <div class="talk__left">
     {% if include.talk.image %}
       <div class="talk__speaker" style="background-image:url('{{ site.baseurl }}/img/{{ site.data.conference.slug }}/speaker/{{ include.talk.image }}');"></div>

@@ -24,9 +24,6 @@
 
     @include media ('>=tablet-large') {
       font-size: 310px;
-      margin-top: s(0);
-      position: fixed;
-      top: s(10);
       user-select: none;
     }
   }
@@ -57,7 +54,7 @@
       font-size: 64px;
       margin-bottom: s(4);
       margin-left: s(8);
-      margin-top: s(17.5);
+      margin-top: s(-17.5);
     }
   }
 }

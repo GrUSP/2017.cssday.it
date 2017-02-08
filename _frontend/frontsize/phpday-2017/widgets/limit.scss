@@ -1,7 +1,7 @@
 @include block ('limit') {
 
   overflow: hidden;
-  padding: s(2) s(4);
+  padding: s(2);
 
   @include limit((
       '>=desktop-large': 1600px,
