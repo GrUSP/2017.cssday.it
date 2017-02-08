@@ -36,7 +36,7 @@
     Diventato ormai uno standard nello sviluppo web, tanto di essere adottato anche nelle specifiche della pubblica amministrazione, Bootstrap è lo strumento più importante da conoscere per uno sviluppatore web. In questa sessione vedremo, con un approccio molto pratico, le novità della versione 4, entrando nel dettaglio della stilizzazione grafica con SASS e analizzando la nuova gestione del grid system basato su Flexbox.
 -
   speaker_id: Andrea-Verlicchi 
-  title: Responsive Images, uno standard HTML 5.1 standard HTML 5.1	
+  title: Responsive Images, uno standard HTML 5.1
   extract: >
     Sono da poco una W3C recommendation il nuovo tag <picture> e gli attributi srcset e sizes nel tag <img>. In questo talk vedremo cosa sono, come si usano, in quali casi preferire l'uno o l'altro, ed alcune best practice di utilizzo per dare un boost ai tempi di caricamento delle vostre web app o pagine web. 
 -
