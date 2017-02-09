@@ -9,7 +9,7 @@
   position: relative;
 
   @include media ('>=tablet-large') {
-    padding-bottom: s(6);
+    padding-bottom: 115px;
   }
 
   @include element ('where-when') {
