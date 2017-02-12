@@ -70,6 +70,10 @@ gold:
     - 5 tickets with 50% discount
   max: 0
   list:
+    -
+      url: https://www.pixartprinting.it/?utm_source=cssday2017
+      image: s-pixartprinting.png
+      
 
 silver:
   price: € 500
