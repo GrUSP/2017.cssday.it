@@ -9,7 +9,9 @@
     "gulp": "github:gulpjs/gulp#4.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "cp ./node_modules/dustman/gulpfile.js .",
+    "dev": "./node_modules/.bin/gulp -S --config dustman-cssday.yml watch & jekyll serve"
   },
   "repository": {
     "type": "git",
