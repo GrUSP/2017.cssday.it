@@ -2,7 +2,7 @@
 # img/sponsors/file.jpg
 # img/sponsors/guide.pdf
 
-pdf: 
+pdf:
 call_for_sponsor: true
 
 main:
@@ -52,7 +52,7 @@ platinum:
     - 5 tickets with 50% discount
   max: 0
   list:
-    - 
+    -
       url: http://www.kerning.it
       image: kerning.svg
     -
@@ -70,9 +70,6 @@ gold:
     - 5 tickets with 50% discount
   max: 0
   list:
-    -
-      url: https://www.pixartprinting.it/?utm_source=cssday2017
-      image: s-pixartprinting.png
       
 silver:
   price: € 500
@@ -99,6 +96,6 @@ bronze:
     -
       url: http://antreem.com?utm_source=cssday2017
       image: antreem.svg
-    - 
+    -
       url: https://milanofrontend.it
       image: mfm.svg
