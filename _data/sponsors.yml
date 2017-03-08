@@ -70,7 +70,7 @@ gold:
     - 5 tickets with 50% discount
   max: 0
   list:
-      
+
 silver:
   price: € 500
   offer:
@@ -99,3 +99,6 @@ bronze:
     -
       url: https://milanofrontend.it
       image: mfm.svg
+    -
+      url: https://www.ynap.com
+      image: ynap.svg
